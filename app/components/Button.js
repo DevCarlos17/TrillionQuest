@@ -1,0 +1,16 @@
+export default function Button({ name, style, children }) {
+  return (
+    <button
+      className={` border border-white
+        bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+        text-yellow-500 font-bold rounded-full 
+        transition-transform duration-300 
+        hover:scale-110 hover:bg-gradient-to-r 
+        hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
+        hover:text-gray-900  px-8 py-2  md:px-8 md:py-3 ${style}`}
+    >
+      {name}
+      {children && <span className="ml-2">{children}</span>}
+    </button>
+  );
+}
