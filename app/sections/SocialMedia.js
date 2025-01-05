@@ -19,7 +19,7 @@ export default function SocialMedia() {
   }, []);
 
   return (
-    <div className=" mx-auto h-[100vh] w-full flex items-center justify-cente">
+    <div className=" mx-auto h-[100vh] w-full flex items-center justify-center">
       <div className="h-auto w-full text-white flex justify-around md:justify-center items-center space-x-16 md:space-x-0 ">
         {/* Imagen de teléfono */}
 
@@ -31,7 +31,7 @@ export default function SocialMedia() {
             height={800}
             className=" md:h-[70vh]"
           />
-          <div className="z-10 absolute left-1/4 -top-6 md:left-1/4 lg:left-1/3 md:right-80 md:-top-10 flex w-[60vw] h-full">
+          <div className="z-20 absolute left-1/4 -top-6 md:left-1/4 lg:left-1/3 md:right-80 md:-top-10 flex w-[60vw] h-full">
             <AnimatePresence mode="wait">
               <motion.img
                 key={images[currentImageIndex]}
@@ -49,7 +49,7 @@ export default function SocialMedia() {
           </div>
         </div>
 
-        <div className="mt-8 w-[40vw] md:space-y-14] text-start md:text-right lg:text-left">
+        <div className="mt-8 w-[40vw] h-[50vh] md:space-y-20 text-start md:text-right lg:text-left">
           <p className="text-2xl md:text-4xl lg:text-5xl font-bold">
             Social Media Expertise
           </p>
@@ -64,7 +64,7 @@ export default function SocialMedia() {
           <Button
             name={'Learn More'}
             style={
-              'text-md  md:text-xl lg:text-2xl mt-7 md:mt-14 px-4 md:px-12 py-1 md:py-2 border tracking-widest '
+              'text-md  md:text-xl lg:text-2xl mt-7 md:mt-14 px-4 md:px-12 py-1 md:py-2 border tracking-widest absolute z-30 '
             }
           />
         </div>
