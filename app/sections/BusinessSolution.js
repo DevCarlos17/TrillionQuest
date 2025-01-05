@@ -8,7 +8,7 @@ export default function BusinessSoulution() {
       <div className=" text-white p-4 mx-auto md:flex justify-center items-center w-[60%] lg:w-full">
         {/* Texto */}
         <div className="mt-8 md:space-y-20">
-          <p className="text-xl xs:text-3xl md:text-6xl font-bold ml-10">
+          <p className="text-3xl  md:text-6xl font-bold ml-10">
             AI-Powered Business
             <br />
             Solutions
