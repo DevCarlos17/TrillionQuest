@@ -50,7 +50,7 @@ export default function NavBar() {
             href="/"
             className="hidden md:inline-block lg:inline-block text-2xl lg:text-4xl font-bold"
           >
-            Trillion Fundation
+            Trillion Fundation.
           </NavLink>
 
           <NavLink href="/">

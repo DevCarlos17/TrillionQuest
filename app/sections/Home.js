@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import LightRing from '../components/LightRing';
 import DigitalMarketing from '../components/DigitalMarketing';
-import NavBar from '../components/NavBar';
 import Button from '../components/Button';
 import LightPoint from '../components/LightPoint';
 import Form from '../components/Form';
