@@ -1,11 +1,12 @@
 import { MdOutlineEmail } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa6';
+import NavLink from './NavLink';
 
 export default function SubFooter() {
   return (
-    <div className="hidden md:flex justify-between px-8 w-full h-[10vh] text-lg">
+    <div className="flex justify-between pt-10 md:pt-20 items-start md:items-start xl:items-center px-8 w-full h-[60vh] lg:h-[30vh] xl:h-[50vh] text-lg bg-black/15 md:bg-black/5 lg:bg-inherit  ">
       {/* Contact & Social */}
-      <div className="h-full flex flex-col justify-evenly">
+      <div className=" space-y-6 flex flex-col justify-center  ">
         <li className="flex font-bold text-2xl text-white text-opacity-90 gap-x-5">
           <a
             href="https://instagram.com"
@@ -48,27 +49,21 @@ export default function SubFooter() {
       </div>
 
       {/* Useful Links */}
-      <div className="flex flex-col justify-evenly text-start text-white text-opacity-90 font-bold text-2xl">
-        <span className="uppercase ml-4">USEFUL LINKS</span>
+      <div className="flex flex-col justify-evenly text-start text-white text-opacity-90 font-bold text-2xl md:space-y-2 h-[20vh]  ">
+        <span className="uppercase ml-4 mb-2">USEFUL LINKS</span>
 
         <span className="w-[15vw]">
-          <a href="#" className="ml-4">
-            Why choose us
-          </a>
+          <NavLink href="/whyChoosUs">Why Choose Us</NavLink>
           <hr className="text-gray-400/80" />
         </span>
 
         <span>
-          <a href="#" className="ml-4">
-            Services
-          </a>
+          <NavLink href="/services">Services</NavLink>
           <hr className="text-gray-400/80" />
         </span>
 
         <span>
-          <a href="#" className="ml-4">
-            About Us
-          </a>
+          <NavLink href="/about">About Us</NavLink>
           <hr className="text-gray-400/80" />
         </span>
       </div>

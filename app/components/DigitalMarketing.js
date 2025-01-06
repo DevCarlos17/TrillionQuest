@@ -7,11 +7,11 @@ const DigitalMarketing = () => {
         sm:from-black sm:via-gray-950 sm:to-white md:bg-gradient-to-r md:from-black md:via-gray-950 md:to-white"
     >
       {/* Título de Digital Marketing */}
-      <span className=" text-sm md:text-5xl font-bold tracking-wider right-52 text-white whitespace-nowrap md:whitespace-normal">
+      <span className=" text-2xl md:text-5xl font-bold tracking-wider right-52 text-white whitespace-nowrap md:whitespace-normal">
         Digital Marketing
       </span>
 
-      <div className="flex space-x-4 md:space-x-6  gl:mt-10 ml-56">
+      <div className="flex space-x-4 md:space-x-6  gl:mt-10 ml-20 md:ml-56">
         <a
           href="https://facebook.com/"
           target="_blank"

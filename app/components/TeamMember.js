@@ -7,13 +7,13 @@ export default function TeamMember({ name, title, photo, style, children }) {
         className="flex items-end justify-center w-[50vw] md:w-[18vw] h-[40vh] md:h-[35vh] rounded-3xl bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${photo})` }}
       >
-        <div className="w-[100%] py-3 bg-black/60 mb-2 text-white text-center text-opacity-90 rounded-2xl">
+        <div className="w-[100%]  bg-black/60 text-md mb-2 text-white text-center text-opacity-90 rounded-2xl">
           <h2 className="font-bold tracking-wide">{name}</h2>
           <span>{title}</span>
         </div>
       </div>
-      <div className="w-[45%] md:w-full py-1 bg-black bg-opacity-80 text-white text-center text-opacity-90 border rounded-xl">
-        <span className="tracking-wide text-sm md:text-md ">{children}</span>
+      <div className="w-[45%] hidden md:block md:w-full py-1 bg-black bg-opacity-80 text-white text-center text-opacity-90 border rounded-xl">
+        <span className="tracking-wide text-md md:text-md ">{children}</span>
       </div>
     </div>
   );
