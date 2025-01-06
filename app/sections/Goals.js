@@ -1,6 +1,6 @@
 import BoxServices from '../components/BoxServices';
 import Button from '../components/Button';
-// import Slider from '../components/Slider';
+import Slick from '../components/Slick';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 
 export default function Goals() {
@@ -43,7 +43,7 @@ export default function Goals() {
           </p>
         </div>
       </div>
-      {/* <Slider /> */}
+      <Slick />
     </div>
   );
 }

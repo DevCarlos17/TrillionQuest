@@ -38,7 +38,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`h-[10vh] w-full transition-all duration-300 font-semibold ${
+      className={`h-[8vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${
         hasScrolled ? 'bg-black shadow-lg' : ''
       }`}
     >
@@ -108,9 +108,6 @@ export default function NavBar() {
           <NavLink href="/contact">Contact</NavLink>
         </div>
       )}
-
-      {/* Línea blanca */}
-      <hr className="text-slate-400 border border-slate-400 w-full" />
     </div>
   );
 }
