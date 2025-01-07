@@ -9,9 +9,8 @@ export default function NavLink({ href, children, className = '' }) {
   return (
     <Link
       href={href}
-      className={`cursor-pointer hover:scale-110 transition duration-300 ${
-        isActive ? 'text-yellow-500' : ''
-      } ${className}`}
+      className={`cursor-pointer hover:scale-125 transition duration-700 ${isActive ? 'text-yellow-500' : ''
+        } ${className}`}
     >
       {children}
     </Link>

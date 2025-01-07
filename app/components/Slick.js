@@ -47,23 +47,30 @@ const PartnerSlider = () => {
   };
 
   return (
-    <motion
-      className="w-full py-4 relative overflow-hidden animate-glow rounded-lg"
+    <motion.div
+      className="w-full py-4 relative border animate-glow border-white overflow-hidden rounded-lg"
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.5 }}
     >
       <Slider {...settings}>
         {partners.map((partner) => (
-          <div key={partner.name} className="flex items-center justify-center">
-            <partner.icon
-              className="w-12 h-12 sm:w-16 sm:h-16 text-white transition-transform duration-500 hover:scale-125 hover:text-yellow-500"
-              aria-label={partner.name}
-            />
+          <div key={partner.name}>
+            <div className="flex items-center justify-center group cursor-pointer">
+              {/* Ícono */}
+              <partner.icon
+                className="w-[7vw] h-[7vh] md:w-[8vw] md:h-[8vh] lg:w-[9vw] xl:h-[9vh] text-white transition-transform duration-500 group-hover:scale-125 group-hover:text-yellow-500"
+                aria-label={partner.name}
+              />
+              {/* Nombre */}
+              <span className="text-3xl md:text-4xl lg:text-5xl  font-semibold text-white transition-colors duration-300 group-hover:text-yellow-500">
+                {partner.name}
+              </span>
+            </div>
           </div>
         ))}
       </Slider>
-    </motion>
+    </motion.div>
   );
 };
 

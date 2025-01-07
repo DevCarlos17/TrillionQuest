@@ -5,16 +5,18 @@ import { IoMdArrowRoundForward } from 'react-icons/io';
 
 export default function Goals() {
   return (
-    <div className="h-screen w-full text-center justify-center">
-      <h1 className="text-5xl font-bold mb-5">
-        Achieve Your Goals - TRILLION QUEST
-      </h1>
-      <h2 className="font-sans text-2xl tracking-widest uppercase mb-1">
-        The new digital era is here
-      </h2>
-      <h2 className="font-sans text-2xl tracking-widest">
-        Rated 4.8/5 <span className="text-yellow-500">★★★★★</span> Reviews
-      </h2>
+    <div className="min-h-screen w-full text-center justify-center">
+      <section className="">
+        <h1 className="text-5xl font-bold mb-5">
+          Achieve Your Goals - TRILLION QUEST
+        </h1>
+        <h2 className="font-sans text-2xl tracking-widest uppercase mb-1">
+          The new digital era is here
+        </h2>
+        <h2 className="font-sans text-2xl tracking-widest">
+          Rated 4.8/5 <span className="text-yellow-500">★★★★★</span> Reviews
+        </h2>
+      </section>
 
       <div className="mb-10">
         <BoxServices />
@@ -43,7 +45,10 @@ export default function Goals() {
           </p>
         </div>
       </div>
-      <Slick />
+
+      <div className='mt-10'>
+        <Slick />
+      </div>
     </div>
   );
 }
