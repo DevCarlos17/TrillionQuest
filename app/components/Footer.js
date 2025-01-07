@@ -2,7 +2,7 @@ import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <div className="flex flex-col justify-center w-full h-[12vh] items-center   bg-slate-700 text-white text-opacity-90 gap-y-1 font-semibold">
+    <div className="flex flex-col justify-center w-full h-[12vh] items-center py-2  bg-slate-700 text-white text-opacity-90 gap-y-1 font-semibold">
       <p className="text-2xl">© 2025 TRILLION QUEST - All rights reserved.</p>
       <div className="container mx-auto flex w-full h-full text-2xl space-x-10 justify-between items-center mb-5">
         <div className="flex w-[90vw] justify-evenly">
