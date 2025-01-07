@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
 import NavLink from './NavLink';
+import Sidebar from './Sidebar';
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -38,14 +39,13 @@ export default function NavBar() {
 
   return (
     <div
-      className={`h-[8vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${
-        hasScrolled ? 'bg-black shadow-lg' : ''
-      }`}
+      className={`h-[8vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${hasScrolled ? 'bg-black shadow-lg' : ''
+        }`}
     >
       {/* Navbar Principal */}
       <div className="flex items-center justify-between py-3 w-full">
         {/* Logo y enlaces principales */}
-        <div className="w-[50vw] flex justify-center items-start space-x-5 lg:space-x-20 text-xl md:text-2xl lg:text-3xl">
+        <div className="flex space-x-5 lg:space-x-20 text-xl md:text-2xl lg:text-3xl">
           <NavLink
             href="/"
             className="hidden md:inline-block lg:inline-block text-2xl lg:text-4xl font-bold"
@@ -55,13 +55,21 @@ export default function NavBar() {
 
           <NavLink href="/">
             <Image
-              src="/images/mini-logo.svg"
+              src="/images/miniLogo.svg"
               alt="Mini Logo"
-              width={48}
-              height={48}
-              className="block sm:block md:hidden lg:hidden self-start"
+              width={100}
+              height={50}
+              className="block sm:block md:hidden lg:hidden mr-60"
             />
           </NavLink>
+
+          <button
+            href="/contact"
+            className="sm:inline-block md:hidden px-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-600"
+          >
+            Contact
+          </button>
+
           <NavLink
             href="/whyChooseUs"
             className="hidden sm:block text-xl lg:text-3xl"
@@ -77,7 +85,7 @@ export default function NavBar() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-10 w-10"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -102,10 +110,11 @@ export default function NavBar() {
       {/* Menú móvil desplegable */}
       {isMobileMenuOpen && (
         <div ref={mobileMenuRef} className="md:hidden py-4 px-6 space-y-2">
-          <NavLink href="/whyChoosUs">Why Choose Us</NavLink>
+          <Sidebar />
+          {/* <NavLink href="/whyChooseUs">Why Choose Us</NavLink>
           <NavLink href="/about">About Us</NavLink>
           <NavLink href="/services">Services</NavLink>
-          <NavLink href="/contact">Contact</NavLink>
+          <NavLink href="/contact">Contact</NavLink> */}
         </div>
       )}
     </div>
