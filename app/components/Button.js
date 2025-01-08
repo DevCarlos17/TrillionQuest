@@ -7,7 +7,7 @@ export default function Button({ name, style, children }) {
         transition-transform duration-300 
         hover:scale-110 hover:bg-gradient-to-r 
         hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
-        hover:text-gray-900  px-8 py-2  md:px-8 md:py-3 ${style}`}
+        hover:text-gray-900  px-0 py-2   ${style}`}
     >
       {name}
       {children && <span className="ml-2">{children}</span>}
