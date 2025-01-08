@@ -1,17 +1,20 @@
 import Image from "next/image";
 import ServicesText from "../components/ServivesText";
+import Services2 from "../components/Services2";
 
 export default function Services() {
     return (
-        <div className="container mx-auto">
-            <div className="  grid md:grid-cols-3 gap-4 w-full h-[100vh] z-0">
+        <div className="relative]">
+            <div className="grid md:grid-cols-3 gap-4 w-full h-[100vh] z-0">
                 {/* Columna izquierda */}
                 <div className="flex flex-col items-center">
-                    <Image className="absolute w-[80vh] mr-40 h-[80vh] z-0"
+                    <Image
+                        className="absolute w-[80vh] mr-40 h-[80vh] z-0"
                         src="/images/Planet3.svg"
                         alt="background"
                         width={600}
-                        height={600} />
+                        height={600}
+                    />
                 </div>
 
                 {/* Columna central */}
@@ -25,7 +28,7 @@ export default function Services() {
                         height={600}
                     />
 
-                    {/* Mini planeta 3 */}
+                    {/* Mini planetas */}
                     <Image
                         src="/images/MiniPlanet1.svg"
                         width={800}
@@ -33,8 +36,6 @@ export default function Services() {
                         alt="logoTrillion"
                         className="absolute w-[10vh] h-[15vh] top-5 mt-7 z-10"
                     />
-
-                    {/* Mini planeta 2 */}
                     <Image
                         src="/images/MiniPlanet1.svg"
                         width={800}
@@ -42,8 +43,6 @@ export default function Services() {
                         alt="logoTrillion"
                         className="absolute w-[7vh] h-[7vh] top-6 z-10"
                     />
-
-                    {/* Mini planeta 1 */}
                     <Image
                         src="/images/MiniPlanet1.svg"
                         width={800}
@@ -61,7 +60,7 @@ export default function Services() {
                         className="relative mt-20 w-[80vh] h-[80vh] z-10"
                     />
 
-                    {/* Mini planeta 1 */}
+                    {/* Mini planetas inferiores */}
                     <Image
                         src="/images/MiniPlanet1.svg"
                         width={800}
@@ -69,8 +68,6 @@ export default function Services() {
                         alt="logoTrillion"
                         className="absolute w-[10vh] h-[15vh] bottom-24 z-10"
                     />
-
-                    {/* Mini planeta 2 */}
                     <Image
                         src="/images/MiniPlanet1.svg"
                         width={800}
@@ -78,8 +75,6 @@ export default function Services() {
                         alt="logoTrillion"
                         className="absolute w-[7vh] h-[7vh] bottom-16 z-10"
                     />
-
-                    {/* Mini planeta 3 */}
                     <Image
                         src="/images/MiniPlanet1.svg"
                         width={800}
@@ -89,20 +84,24 @@ export default function Services() {
                     />
                 </div>
 
-
                 {/* Columna derecha */}
-                <div className=" flex flex-col items-center">
-                    <Image className="absolute w-[80vh] h-[80vh] z-0"
+                <div className="flex flex-col items-center">
+                    <Image
+                        className="absolute w-[80vh] h-[80vh] z-0"
                         src="/images/Planet4.svg"
                         alt="background"
                         width={100}
-                        height={100} />
+                        height={100}
+                    />
                 </div>
             </div>
-            <div className="bg-gray-400 text-black w-full h-[100vh]">
+
+            <div className="w-full flex z-20 absolute top-96">
                 <ServicesText />
             </div>
+            <div className="w-full">
+                <Services2 />
+            </div>
         </div>
-    )
+    );
 }
-
