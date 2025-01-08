@@ -39,8 +39,9 @@ export default function NavBar() {
 
   return (
     <div
-      className={`h-[8vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${hasScrolled ? 'bg-black shadow-lg' : ''
-        }`}
+      className={`h-[10vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${
+        hasScrolled ? 'bg-black shadow-lg' : ''
+      }`}
     >
       {/* Navbar Principal */}
       <div className="flex items-center justify-between py-3 w-full">
@@ -50,7 +51,7 @@ export default function NavBar() {
             href="/"
             className="hidden md:inline-block lg:inline-block text-2xl lg:text-4xl font-bold"
           >
-            Trillion Fundation.
+            Trillion Fundation
           </NavLink>
 
           <NavLink href="/">
