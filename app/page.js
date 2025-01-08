@@ -6,17 +6,20 @@ import OurTeam from './sections/OurTeam';
 import Parther from './sections/Partner';
 import SocialMedia from './sections/SocialMedia';
 import Footer from './components/Footer';
+import Service from './service/page';
+import Services from './sections/Services';
 
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <Home />
-      <Goals />
-      <Parther />
-      <BusinessSoulution />
-      <SocialMedia />
-      <AdsToSoftware />
-      <OurTeam />
+      {/* <Home /> */}
+      {/* <Goals /> */}
+      {/* <Parther /> */}
+      {/* <BusinessSoulution /> */}
+      {/* <SocialMedia /> */}
+      {/* <AdsToSoftware /> */}
+      {/* <OurTeam /> */}
+      <Services />
     </div>
   );
 }
