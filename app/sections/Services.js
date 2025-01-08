@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ServicesText from "../components/ServivesText";
 import Services2 from "../components/Services2";
+import Services3 from "../components/Services3";
 
 export default function Services() {
     return (
@@ -100,6 +101,7 @@ export default function Services() {
                 <ServicesText />
             </div>
             <Services2 />
+            <Services3 />
         </div>
     );
 }

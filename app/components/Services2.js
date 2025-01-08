@@ -1,15 +1,20 @@
-import Button from "./Button"
 
 export default function Services2() {
     return (
-        <div className="container mx-auto bg-green-500 h-[100vh] w-a">
-            <div className="flex p-5">
-                <Button
-                    name="SOCIAL MEDIA MANAGEMENT"
-                    style="text-lg md:text-4xl tracking-wide font-semibold uppercase bg-transparent hover:bg-gray-800 hover:text-white transition-all duration-700 ease-in-out rounded-1xl py-2 shadow-lg" />
+        <div className="container mx-auto h-[105vh] mb-5">
+            <div className="flex py-5 mb-5">
+                <button className="border w-[50%] border-white
+        bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+        text-white font-bold rounded-3xl 
+        transition-transform duration-300 text-4xl
+        hover:scale-110 hover:bg-gradient-to-r 
+        hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
+        hover:text-gray-900 ">
+                    SOCIAL MEDIA MANAGEMENT
+                </button>
 
                 <div className="flex justify-center">
-                    <span className="text-black text-2xl md:ml-5 font-bold">
+                    <span className="text-white text-2xl md:ml-32 font-bold">
                         We design strategic ad campaigns that capture <br />
                         the right attention and guide your customers <br />
                         through a sales funnel optimized to maximize <br />
@@ -20,24 +25,34 @@ export default function Services2() {
                     </span>
                 </div>
             </div>
-            <div className="flex justify-end md:ml-40 bg-yellow-500 mb-10 p-5">
-                <Button
-                    name="ADS & SALES FUNNaaaELS"
-                    style="text-md md:text-xl lg:text-2xl px-4 md:px-40 py-1 md:py-20 border tracking-widest" />
+            <div className="flex justify-end h-[25vh]">
+                <button className="border w-[50%] border-white
+        bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+        text-white font-bold rounded-3xl 
+        transition-transform duration-300 text-4xl
+        hover:scale-110 hover:bg-gradient-to-r 
+        hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
+        hover:text-gray-900 ">
+                    ADS & SALES FUNNELS
+                </button>
             </div>
-            <div className="flex md:ml-40 bg-yellow-500 mt-10 mb-10 p-5">
-                <span className="ml-10 text-black text-2xl font-bold w-full">
+            <div className="flex flex-col mt-5 ">
+                <button className="border w-[50%] mb-5 h-[25vh] border-white
+        bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+        text-white font-bold rounded-3xl 
+        transition-transform duration-300 text-4xl
+        hover:scale-110 hover:bg-gradient-to-r 
+        hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
+        hover:text-gray-900 ">
+                    ADS & SALES FUNNELS
+                </button>
+                <span className="flex justify-start ml-10 text-white text-2xl font-bold w-full">
                     Our business development services focus on identifying new <br /> markets,
                     building strategic alliances, and implementing growth <br /> strategies
                     tailored to your company’s vision. From lead <br /> generation  to
-                    nurturing long-term relationships, we help your business expand
+                    nurturing long-term relationships, we <br /> help your business expand
                     sustainably and competitively
                 </span>
-                <div className="flex md:ml-40 bg-yellow-500 mt-10 mb-10 p-5">
-                    <Button
-                        name="ADS & SALES FUNNELS"
-                        style="text-md md:text-xl lg:text-2xl px-4 md:px-40 py-1 md:py-20 border tracking-widest" />
-                </div>
             </div>
         </div>
     )
