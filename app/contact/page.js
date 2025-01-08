@@ -1,8 +1,10 @@
 import CoreValues from './sections/CoreValues';
+import OurStrategy from './sections/OutStrategy';
+import ServicesOverview from './sections/ServicesOverview';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen w-full flex flex-col justify-between overflow-hidden relative">
+    <div className="min-h-screen w-full flex flex-col  items-center justify-between overflow-hidden relative">
       {/*Background
     
       <div
@@ -17,6 +19,8 @@ export default function Contact() {
     */}
       {/*Core Values*/}
       <CoreValues />
+      <OurStrategy />
+      <ServicesOverview />
     </div>
   );
 }

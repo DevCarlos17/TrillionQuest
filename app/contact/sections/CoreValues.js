@@ -1,5 +1,5 @@
 import Button from '@/app/components/Button';
-import Card from './CardCoreValues';
+import Card from '../components/CardCoreValues';
 
 export default function CoreValues() {
   return (
@@ -11,7 +11,7 @@ export default function CoreValues() {
           title="INNOVATION & CLIENT FOCUS"
           imageSectionColor="bg-gray-600/30"
           textSectionColor="bg-gray-700/5"
-          containerStyle=""
+          containerStyle="mb-2 md:mb-0"
         >
           <ul className="text-left list-disc space-y-5 mt-0 2xl:mt-16">
             <li>
@@ -31,7 +31,7 @@ export default function CoreValues() {
           title="INTEGRITY & EXCELLENCE"
           imageSectionColor="bg-gray-600/30"
           textSectionColor="bg-gray-700/5"
-          containerStyle="shadow-lg"
+          containerStyle="mb-2 md:mb-0"
         >
           <ul className="text-left list-disc space-y-5">
             <li>
@@ -51,7 +51,7 @@ export default function CoreValues() {
           title="COLLABORATION & RESPONSIBILITY"
           imageSectionColor="bg-gray-600/30"
           textSectionColor="bg-gray-700/5"
-          containerStyle=""
+          containerStyle="mb-2 md:mb-0"
         >
           <ul className="text-left list-disc space-y-5">
             <li>
@@ -66,7 +66,7 @@ export default function CoreValues() {
         </Card>
       </section>
       <div className="w-full h-[20vh] flex flex-col justify-evenly items-center ">
-        <span className="text-base sm:text-lg 2xl:text-2xl font-bold w-[80%] text-center">
+        <span className="text-base sm:text-lg 2xl:text-2xl font-bold w-[80%] text-center uppercase">
           OUR TOP PRIORITY IS TO THOROUGHLY UNDERSTAND YOUR OBJECTIVES
         </span>
         <Button
