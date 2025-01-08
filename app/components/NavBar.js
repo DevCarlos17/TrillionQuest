@@ -39,7 +39,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`h-[10vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${
+      className={`h-[10vh] flex items-center fixed top-0 z-50 w-full transition-all duration-300 font-semibold ${
         hasScrolled ? 'bg-black shadow-lg' : ''
       }`}
     >
