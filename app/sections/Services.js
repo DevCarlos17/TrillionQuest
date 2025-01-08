@@ -85,13 +85,13 @@ export default function Services() {
                 </div>
 
                 {/* Columna derecha */}
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col mr-44 items-center">
                     <Image
                         className="absolute w-[80vh] h-[80vh] z-0"
                         src="/images/Planet4.svg"
                         alt="background"
-                        width={100}
-                        height={100}
+                        width={600}
+                        height={600}
                     />
                 </div>
             </div>
@@ -99,9 +99,7 @@ export default function Services() {
             <div className="w-full flex z-20 absolute top-96">
                 <ServicesText />
             </div>
-            <div className="w-full">
-                <Services2 />
-            </div>
+            <Services2 />
         </div>
     );
 }
