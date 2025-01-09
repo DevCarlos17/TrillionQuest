@@ -1,12 +1,13 @@
-import Image from "next/image";
-import LightRing from "../components/LightRing";
-import LightPoint from "../components/LightPoint";
-import Button from "../components/Button";
-import Presentation from "../components/Presentation";
+import Image from 'next/image';
+import LightRing from '../components/LightRing';
+import LightPoint from '../components/LightPoint';
+import Button from '../components/Button';
+import Presentation from '../components/Presentation';
 
 export default function Contact() {
   return (
     <div className="h-min-screen w-full flex flex-col overflow-hidden">
+      {/*
       <section className=" w-full h-[70vh] sm:flex flex-col justify-end ">
         <div className="flex flex-col justify-center items-center">
           <div className="w-[60vh] mt-48 ml-20 h-[60vh] md:w-[60vh] md:h-[60vh] ">
@@ -43,6 +44,43 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      */}
+      <section className=" w-full h-[70vh] sm:flex flex-col justify-end overflow-hidden ">
+        <div className="flex flex-col justify-center items-center">
+          <div className="w-[60vh] h-[60vh] md:w-[60vh] md:h-[60vh] ">
+            <Image
+              className="absolute w-[60vh] h-[60vh]"
+              src="/images/background.svg"
+              alt="background"
+              width={600}
+              height={600}
+            />
+          </div>
+
+          <div className="absolute z-10 w-[60vh] h-[60vh] md:w-[60vh] ">
+            <LightRing glowColor="rgba(247, 220, 153, 0.7)" />
+          </div>
+
+          <div className="absolute hidden md:inline-block z-20 w-[70vh]  h-[70vh] md:w-[70vh] bottom-16 md:bottom-10 lg:bottom-28 ">
+            <Image
+              className="w-[70vh] h-[70vh]"
+              src="/images/RobotContact.svg"
+              alt="robot"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="absolute z-30 w-[60vh] h-[65vh] md:w-[65vh] bottom-16 md:bottom-10 lg:bottom-28 ">
+            <Image
+              src={'/images/logoTrillion.svg'}
+              width={600}
+              height={600}
+              alt="logoTrillion"
+              className="z-10 w-[70vh] h-[70vh]"
+            />
+          </div>
+        </div>
+      </section>
       {/* Boton */}
       <div className="flex text-center items-center -ml-16 md:ml-20 md:h-[10vh] md:w-full mb-5">
         <Button
@@ -60,7 +98,5 @@ export default function Contact() {
         <Presentation />
       </div>
     </div>
-
-
   );
 }

@@ -5,8 +5,6 @@ import BusinessSoulution from './sections/BusinessSolution';
 import OurTeam from './sections/OurTeam';
 import Parther from './sections/Partner';
 import SocialMedia from './sections/SocialMedia';
-import Footer from './components/Footer';
-import Service from './services/page';
 
 export default function App() {
   return (
@@ -18,7 +16,6 @@ export default function App() {
       <SocialMedia />
       <AdsToSoftware />
       <OurTeam />
-      {/* <Footer /> */}
     </div>
   );
 }
