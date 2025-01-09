@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from 'react';
 import NavLink from './NavLink';
 import Sidebar from './Sidebar';
 
-export default function NavBar() {
+export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const mobileMenuRef = useRef(null);
@@ -72,7 +72,7 @@ export default function NavBar() {
           </button>
 
           <NavLink
-            href="/whyChooseUs"
+            href="/why-choose-us"
             className="hidden sm:block text-xl lg:text-3xl"
           >
             Why Choose Us

@@ -6,8 +6,7 @@ import OurTeam from './sections/OurTeam';
 import Parther from './sections/Partner';
 import SocialMedia from './sections/SocialMedia';
 import Footer from './components/Footer';
-import Service from './service/page';
-import Services from './sections/Services';
+import Service from './services/page';
 
 export default function App() {
   return (
@@ -15,11 +14,10 @@ export default function App() {
       {/* <Home /> */}
       {/* <Goals /> */}
       {/* <Parther /> */}
-      {/* <BusinessSoulution /> */}
+      {/* <BusinessSoulution />
       {/* <SocialMedia /> */}
       {/* <AdsToSoftware /> */}
       {/* <OurTeam /> */}
-      <Services />
     </div>
   );
 }
