@@ -1,11 +1,13 @@
+import NavLink from '@/app/components/NavLink';
 import Image from 'next/image';
+import BookACall from '../components/BookACall';
 
 export default function Main() {
   return (
-    <div className="w-full h-[100vh] flex flex-col justify-center items-center relative">
+    <div className="w-full h-[85vh] md:h-[90vh] lg:h-[95vh] xl:h-[90vh] flex flex-col justify-center items-center relative">
       {/* Planet 1 */}
 
-      <div className="w-full h-[95%] z-20 overflow-hidden relative">
+      <div className="w-full h-[35%] 2xl:[95%] z-20 overflow-hidden relative">
         <Image
           className="w-full h-[120%] object-cover z-20 absolute"
           src={'/images/planet11.svg'}
@@ -96,6 +98,8 @@ export default function Main() {
           height={1200}
         />
       </div>
+      {/*Book a call */}
+      <BookACall />
     </div>
   );
 }
