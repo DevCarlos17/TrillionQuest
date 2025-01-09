@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
 import NavLink from './NavLink';
 import Sidebar from './Sidebar';
+import Button from './Button';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,40 +40,47 @@ export default function Navbar() {
 
   return (
     <div
-      className={`h-[10vh] flex items-center fixed top-0 z-50 w-full transition-all duration-300 font-semibold ${hasScrolled ? 'bg-black shadow-lg' : ''
-        }`}
+      className={`h-[10vh] flex items-center sticky top-0 z-50 w-full transition-all duration-300 font-semibold bg-black text-white `}
     >
       {/* Navbar Principal */}
-      <div className="flex items-center justify-around 2xl:space-x-32 py-3 w-full bg-green-700">
+      <div className="flex items-center justify-between  mx-3 sm:mx-0 sm:justify-around 2xl:space-x-32 py-0 w-full">
         {/* Logo y enlaces principales */}
-        <div className="flex space-x-5 lg:space-x-10 text-xl md:text-2xl lg:text-3xl">
+        <div className="flex w-[65%] sm:w-[40%] md:w-[30%] lg:w-[60%]  justify-between lg:justify-start  items-center lg:space-x-5 text-xl md:text-2xl lg:text-3xl">
           <NavLink
             href="/"
-            className="hidden md:inline-block lg:inline-block text-xl lg:text-4xl font-extrabold"
+            className="hidden  lg:inline-block text-xl lg:text-3xl font-extrabold"
           >
             Trillion Fundation
           </NavLink>
 
-          <NavLink href="/">
+          {/* Logo */}
+
+          <NavLink className="" href="/">
             <Image
               src="/images/miniLogo.svg"
               alt="Mini Logo"
               width={100}
-              height={50}
-              className="block sm:block md:hidden lg:hidden bg-white mr-60"
+              height={100}
+              className="block lg:hidden mt-2"
             />
           </NavLink>
 
           <NavLink
             href="/contact"
-            className="sm:inline-block md:hidden px-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-600"
+            className=" sm:hidden border border-white
+             bg-gradient-to-r from-gray-950 via-gray-900 to-gray-400 
+           text-yellow-500 font-bold rounded-full 
+        transition-transform duration-300 
+        hover:scale-105 hover:bg-gradient-to-r 
+        hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
+        hover:text-gray-900 px-0 py-1 w-[40%] text-base text-center"
           >
-            Contact
+            CONTACT US
           </NavLink>
 
           <NavLink
             href="/why-choose-us"
-            className="hidden sm:block text-xl lg:text-3xl font-bold"
+            className="hidden sm:block text-xl lg:text-2xl font-bold"
           >
             Why Choose Us
           </NavLink>
@@ -100,7 +108,7 @@ export default function Navbar() {
         </button>
 
         {/* Enlaces visibles solo en pantallas grandes */}
-        <div className="hidden sm:flex justify-center space-x-4 lg:space-x-14 text-xl lg:text-3xl font-bold">
+        <div className="hidden sm:flex justify-center space-x-4 lg:space-x-14 text-xl lg:text-2xl font-bold">
           <NavLink href="/about">About Us</NavLink>
           <NavLink href="/services">Services</NavLink>
           <NavLink href="/contact">Contact</NavLink>
@@ -109,7 +117,10 @@ export default function Navbar() {
 
       {/* Menú móvil desplegable */}
       {isMobileMenuOpen && (
-        <div ref={mobileMenuRef} className="absolute top-[10vh] left-0 w-full bg-white py-4 px-6 space-y-2 md:hidden">
+        <div
+          ref={mobileMenuRef}
+          className="absolute top-[10vh] left-0 w-full  py-4 px-6 space-y-2 md:hidden"
+        >
           <Sidebar />
         </div>
       )}

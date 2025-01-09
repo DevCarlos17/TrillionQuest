@@ -7,7 +7,7 @@ import Form from '../components/Form';
 
 export default function Home() {
   return (
-    <div className="h-min-screen w-full flex flex-col overflow-hidden">
+    <div className="lg:h-min-screen w-full flex flex-col overflow-hidden ">
       {/* Images Section */}
       <div className="hidden lg:block absolute  lg:left-0 xl:left-20 2xl:left-28 top-80 sm:top-72 md:top-96 transform z-20 -translate-y-1/2 md:bg-gray-600/50 lg:bg-gray-600/50 rounded-3xl pointer-events-auto w-[180px] h-[350px] md:w-[300px] md:h-[350px] lg:w-[360px] lg:h-[400px] mx-auto">
         <Form />
