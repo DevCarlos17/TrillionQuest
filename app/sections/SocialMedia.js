@@ -53,7 +53,7 @@ export default function SocialMedia() {
           <p className="text-2xl md:text-4xl lg:text-5xl font-bold">
             Social Media Expertise
           </p>
-          <p className="text-white text-lg md:text-2xl mt-6 md:mt-12 ">
+          <p className="text-white text-lg md:text-3xl mt-6 md:mt-12 ">
             Personalized strategies, improved
             <br />
             visibility, and fostering genuine

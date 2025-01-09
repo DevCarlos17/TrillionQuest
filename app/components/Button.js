@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Button({ name, style, children, href }) {
+export default function Button({ name, style, children, href, linkStyle }) {
   const buttonContent = (
     <button
       className={`border border-white
