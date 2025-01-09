@@ -5,12 +5,12 @@ import Services3 from "../components/Services3";
 
 export default function Services() {
     return (
-        <div className="relative]">
-            <div className="grid md:grid-cols-3 gap-4 w-full h-[100vh] z-0">
+        <div className="relative">
+            <div className="grid md:grid-cols-3 gap-4 w-full h-[80vh] md:h-[100vh] z-0">
                 {/* Columna izquierda */}
                 <div className="flex flex-col items-center">
                     <Image
-                        className="absolute w-[80vh] mr-40 h-[80vh] z-0"
+                        className="absolute w-[80vh] mr-40 h-[80vh] z-0 hidden sm:block"
                         src="/images/Planet3.svg"
                         alt="background"
                         width={600}
@@ -19,10 +19,10 @@ export default function Services() {
                 </div>
 
                 {/* Columna central */}
-                <div className="relative flex justify-center items-center w-[60vh] h-[60vh]">
+                <div className="relative flex justify-center items-center -top-5 md:top-0 ml-20 md:ml-0 w-[40vh] h-[40vh] md:w-[60vh] md:h-[60vh]">
                     {/* Background */}
                     <Image
-                        className="absolute top-0 left-0 w-full h-full"
+                        className="absolute md:top-0"
                         src="/images/background.svg"
                         alt="background"
                         width={600}
@@ -58,7 +58,7 @@ export default function Services() {
                         width={800}
                         height={800}
                         alt="logoTrillion"
-                        className="relative mt-20 w-[80vh] h-[80vh] z-10"
+                        className="relative mt-20 w-[40vh] h-[40vh] md:w-[80vh] md:h-[80vh] z-10"
                     />
 
                     {/* Mini planetas inferiores */}
@@ -88,7 +88,7 @@ export default function Services() {
                 {/* Columna derecha */}
                 <div className="flex flex-col mr-44 items-center">
                     <Image
-                        className="absolute w-[80vh] h-[80vh] z-0"
+                        className="absolute w-[80vh] h-[80vh] z-0 hidden sm:block"
                         src="/images/Planet4.svg"
                         alt="background"
                         width={600}

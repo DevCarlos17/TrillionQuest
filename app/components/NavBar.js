@@ -39,12 +39,11 @@ export default function NavBar() {
 
   return (
     <div
-      className={`h-[10vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${
-        hasScrolled ? 'bg-black shadow-lg' : ''
-      }`}
+      className={`h-[10vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${hasScrolled ? 'bg-black shadow-lg' : ''
+        }`}
     >
       {/* Navbar Principal */}
-      <div className="flex items-center justify-between py-3 w-full">
+      <div className="flex items-center justify-between py-3 w-full bg-green-700">
         {/* Logo y enlaces principales */}
         <div className="flex space-x-5 lg:space-x-20 text-xl md:text-2xl lg:text-3xl">
           <NavLink
@@ -60,7 +59,7 @@ export default function NavBar() {
               alt="Mini Logo"
               width={100}
               height={50}
-              className="block sm:block md:hidden lg:hidden mr-60"
+              className="block sm:block md:hidden lg:hidden bg-white mr-60"
             />
           </NavLink>
 
@@ -112,10 +111,6 @@ export default function NavBar() {
       {isMobileMenuOpen && (
         <div ref={mobileMenuRef} className="md:hidden py-4 px-6 space-y-2">
           <Sidebar />
-          {/* <NavLink href="/whyChooseUs">Why Choose Us</NavLink>
-          <NavLink href="/about">About Us</NavLink>
-          <NavLink href="/services">Services</NavLink>
-          <NavLink href="/contact">Contact</NavLink> */}
         </div>
       )}
     </div>
