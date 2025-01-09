@@ -44,9 +44,9 @@ export default function Navbar() {
       }`}
     >
       {/* Navbar Principal */}
-      <div className="flex items-center justify-between py-3 w-full">
+      <div className="flex items-center justify-around 2xl:space-x-32 py-3 w-full">
         {/* Logo y enlaces principales */}
-        <div className="flex space-x-5 lg:space-x-20 text-xl md:text-2xl lg:text-3xl">
+        <div className="flex space-x-5 lg:space-x-10 text-xl md:text-2xl lg:text-3xl">
           <NavLink
             href="/"
             className="hidden md:inline-block lg:inline-block text-2xl lg:text-4xl font-bold"
@@ -101,7 +101,7 @@ export default function Navbar() {
         </button>
 
         {/* Enlaces visibles solo en pantallas grandes */}
-        <div className="w-[50vw] hidden sm:flex justify-center space-x-4 lg:space-x-10 text-xl lg:text-3xl">
+        <div className=" hidden sm:flex justify-center space-x-4 lg:space-x-14 text-xl lg:text-3xl">
           <NavLink href="/about">About Us</NavLink>
           <NavLink href="/services">Services</NavLink>
           <NavLink href="/contact">Contact</NavLink>
