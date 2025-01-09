@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
 import NavLink from './NavLink';
 import Sidebar from './Sidebar';
-import Button from './Button';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
