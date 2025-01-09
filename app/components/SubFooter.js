@@ -53,7 +53,7 @@ export default function SubFooter() {
         <span className="uppercase ml-4 mb-2">USEFUL LINKS</span>
 
         <span className="w-[15vw]">
-          <NavLink href="/whyChoosUs">Why Choose Us</NavLink>
+          <NavLink href="/why-choose-us">Why Choose Us</NavLink>
           <hr className="text-gray-400/80" />
         </span>
 

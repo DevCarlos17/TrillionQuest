@@ -53,7 +53,7 @@ export default function MeetOurTeam() {
       <Button
         name={'Learn More'}
         style={
-          'hidden md:block lg:text-3xl  md:w-[25vw] lg:w-[23vw] xl:w-[22vw] 2xl:w[24vw] tracking-widest'
+          'hidden md:block md:text-xl lg:text-2xl  md:w-[25vw] lg:w-[23vw] xl:w-[15vw] 2xl:w-[15vw] tracking-widest md:py-3 2xl:py-4'
         }
       />
       <div className="h-[50vh] w-full">

@@ -27,6 +27,7 @@ export default function Goals() {
         {/* Botón */}
         <Button
           name={'Contact Us'}
+          href={'/contact'}
           style={
             'text-2xl md:text-3xl tracking-widest hidden md:block h-[7vh] px-6'
           }
@@ -46,7 +47,7 @@ export default function Goals() {
         </div>
       </div>
 
-      <div className='mt-10'>
+      <div className="mt-10">
         <Slick />
       </div>
     </div>

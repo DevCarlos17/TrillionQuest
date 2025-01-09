@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import ServicesText from "../components/ServivesText";
 import Services2 from "../components/Services2";
@@ -105,3 +106,4 @@ export default function Services() {
         </div>
     );
 }
+

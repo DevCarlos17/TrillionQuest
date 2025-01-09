@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from 'react';
 import NavLink from './NavLink';
 import Sidebar from './Sidebar';
 
-export default function NavBar() {
+export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const mobileMenuRef = useRef(null);
@@ -39,16 +39,16 @@ export default function NavBar() {
 
   return (
     <div
-      className={`h-[10vh] flex items-center sticky top-0 z-40 w-full transition-all duration-300 font-semibold ${hasScrolled ? 'bg-black shadow-lg' : ''
+      className={`h-[10vh] flex items-center fixed top-0 z-50 w-full transition-all duration-300 font-semibold ${hasScrolled ? 'bg-black shadow-lg' : ''
         }`}
     >
       {/* Navbar Principal */}
-      <div className="flex items-center justify-between py-3 w-full bg-green-700">
+      <div className="flex items-center justify-around 2xl:space-x-32 py-3 w-full bg-green-700">
         {/* Logo y enlaces principales */}
-        <div className="flex space-x-5 lg:space-x-20 text-xl md:text-2xl lg:text-3xl">
+        <div className="flex space-x-5 lg:space-x-10 text-xl md:text-2xl lg:text-3xl">
           <NavLink
             href="/"
-            className="hidden md:inline-block lg:inline-block text-2xl lg:text-4xl font-bold"
+            className="hidden md:inline-block lg:inline-block text-xl lg:text-4xl font-extrabold"
           >
             Trillion Fundation
           </NavLink>
@@ -63,16 +63,16 @@ export default function NavBar() {
             />
           </NavLink>
 
-          <button
+          <NavLink
             href="/contact"
             className="sm:inline-block md:hidden px-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-600"
           >
             Contact
-          </button>
+          </NavLink>
 
           <NavLink
-            href="/whyChooseUs"
-            className="hidden sm:block text-xl lg:text-3xl"
+            href="/why-choose-us"
+            className="hidden sm:block text-xl lg:text-3xl font-bold"
           >
             Why Choose Us
           </NavLink>
@@ -100,7 +100,7 @@ export default function NavBar() {
         </button>
 
         {/* Enlaces visibles solo en pantallas grandes */}
-        <div className="w-[50vw] hidden sm:flex justify-center space-x-4 lg:space-x-10 text-xl lg:text-3xl">
+        <div className="hidden sm:flex justify-center space-x-4 lg:space-x-14 text-xl lg:text-3xl font-bold">
           <NavLink href="/about">About Us</NavLink>
           <NavLink href="/services">Services</NavLink>
           <NavLink href="/contact">Contact</NavLink>
@@ -109,7 +109,7 @@ export default function NavBar() {
 
       {/* Menú móvil desplegable */}
       {isMobileMenuOpen && (
-        <div ref={mobileMenuRef} className="md:hidden py-4 px-6 space-y-2">
+        <div ref={mobileMenuRef} className="absolute top-[10vh] left-0 w-full bg-white py-4 px-6 space-y-2 md:hidden">
           <Sidebar />
         </div>
       )}
