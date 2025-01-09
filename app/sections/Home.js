@@ -12,11 +12,11 @@ export default function Home() {
       <div className="hidden lg:block absolute  lg:left-0 xl:left-20 2xl:left-28 top-80 sm:top-72 md:top-96 transform z-20 -translate-y-1/2 md:bg-gray-600/50 lg:bg-gray-600/50 rounded-3xl pointer-events-auto w-[180px] h-[350px] md:w-[300px] md:h-[350px] lg:w-[360px] lg:h-[400px] mx-auto">
         <Form />
       </div>
-      <section className="hidden w-full h-[70vh] sm:flex flex-col justify-end ">
-        <div className="flex flex-col justify-center items-center">
-          <div className="w-[60vh] h-[60vh] md:w-[60vh] md:h-[60vh] ">
+      <section className=" w-full h-[70vh] sm:h-[70vh] flex flex-col justify-end ">
+        <div className="h-[100vh]  sm:h-auto flex flex-col justify-center items-center">
+          <div className="w-[60vh] h-[60vh] sm:w-[60vh] sm:h-[60vh] ">
             <Image
-              className="absolute w-[60vh] h-[60vh]"
+              className="absolute ml-11 mt-11 sm:ml-0 sm:mt-0 w-[50vh] h-[50vh] sm:w-[60vh]  sm:h-[60vh]"
               src="/images/background.svg"
               alt="background"
               width={600}
@@ -24,11 +24,11 @@ export default function Home() {
             />
           </div>
 
-          <div className="absolute z-10 w-[60vh] h-[60vh] md:w-[60vh] ">
+          <div className="absolute z-10 w-[45vh] h-[45vh] sm:w-[60vh] sm:h-[60vh] md:w-[60vh] ">
             <LightRing glowColor="rgba(247, 220, 153, 0.7)" />
           </div>
 
-          <div className="absolute z-20 w-[60vh]  h-[50vh] md:w-[60vh] ">
+          <div className="absolute hidden sm:block z-20 w-[60vh]  h-[50vh] md:w-[60vh] ">
             <Image
               className="w-[60vh] h-[60vh]"
               src="/images/robot.svg"
@@ -37,13 +37,13 @@ export default function Home() {
               height={600}
             />
           </div>
-          <div className="absolute z-30 w-[60vh] h-[60vh] md:w-[60vh] bottom-16 md:bottom-10 lg:bottom-16 ">
+          <div className="absolute z-30 h-[80%] w-[80%] sm:w-[60vh]  sm:h-[60vh] md:w-[60vh] bottom-16 md:bottom-10 lg:bottom-16 ">
             <Image
               src={'/images/logoTrillion.svg'}
               width={600}
               height={600}
               alt="logoTrillion"
-              className="z-10"
+              className="z-10 h-[115%] w-[115%]"
             />
           </div>
         </div>
