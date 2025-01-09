@@ -14,6 +14,7 @@ export default function Home() {
       </div>
       <section className=" w-full h-[70vh] sm:h-[70vh] flex flex-col justify-end ">
         <div className="h-[100vh]  sm:h-auto flex flex-col justify-center items-center">
+          {/* Background */}
           <div className="w-[60vh] h-[60vh] sm:w-[60vh] sm:h-[60vh] ">
             <Image
               className="absolute ml-11 mt-11 sm:ml-0 sm:mt-0 w-[50vh] h-[50vh] sm:w-[60vh]  sm:h-[60vh]"
@@ -23,11 +24,11 @@ export default function Home() {
               height={600}
             />
           </div>
-
+          {/* Light Ring */}
           <div className="absolute z-10 w-[45vh] h-[45vh] sm:w-[60vh] sm:h-[60vh] md:w-[60vh] ">
             <LightRing glowColor="rgba(247, 220, 153, 0.7)" />
           </div>
-
+          {/* Robot */}
           <div className="absolute hidden sm:block z-20 w-[60vh]  h-[50vh] md:w-[60vh] ">
             <Image
               className="w-[60vh] h-[60vh]"
@@ -36,14 +37,16 @@ export default function Home() {
               width={600}
               height={600}
             />
+            {/* Logo */}
           </div>
+          {/* Logo */}
           <div className="absolute z-30 h-[80%] w-[80%] sm:w-[60vh]  sm:h-[60vh] md:w-[60vh] bottom-16 md:bottom-10 lg:bottom-16 ">
             <Image
               src={'/images/logoTrillion.svg'}
               width={600}
               height={600}
               alt="logoTrillion"
-              className="z-10 h-[115%] w-[115%]"
+              className="z-10 h-[100%] w-[100%]"
             />
           </div>
         </div>
