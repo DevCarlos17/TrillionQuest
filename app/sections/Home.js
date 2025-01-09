@@ -57,7 +57,7 @@ export default function Home() {
           <Button
             name={'Contact Us'}
             style={
-              'text-2xl md:text-3xl ml-[88px] tracking-widest hidden md:block h-[7vh] mt-[1.5vh] '
+              'text-2xl md:px-10 md:text-3xl ml-[88px] tracking-widest hidden md:block h-[7vh] mt-[1.5vh] '
             }
           />
           <LightPoint style={' hidden md:block  z-0 w-[7%] h-auto -ml-[4%]'} />

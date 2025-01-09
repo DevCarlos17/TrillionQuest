@@ -11,13 +11,14 @@ import Service from './services/page';
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* <Home /> */}
-      {/* <Goals /> */}
-      {/* <Parther /> */}
-      {/* <BusinessSoulution />
-      {/* <SocialMedia /> */}
-      {/* <AdsToSoftware /> */}
-      {/* <OurTeam /> */}
+      <Home />
+      <Goals />
+      <Parther />
+      <BusinessSoulution />
+      <SocialMedia />
+      <AdsToSoftware />
+      <OurTeam />
+      {/* <Footer /> */}
     </div>
   );
 }
