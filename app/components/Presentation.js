@@ -8,7 +8,7 @@ export default function Presentation() {
                 <div className="flex justify-center md:justify-end w-full md:w-1/3">
                     <Image
                         src="/images/LogoContact.svg"
-                        className="w-[10%] h-auto md:w-[100%] md:h-auto"
+                        className="w-[70%] h-auto md:w-[100%] md:h-auto"
                         alt="Trillion Quest Logo"
                         width={150}
                         height={150}
@@ -59,7 +59,7 @@ export default function Presentation() {
             </div>
 
 
-            <div className="flex flex-col md:flex-row items-start p-10 space-y-10 md:space-y-0 md:space-x-10">
+            <div className="flex flex-col mt-48 md:flex-row items-start p-10 space-y-10 md:space-y-0 md:space-x-10">
                 {/* Sección de texto */}
                 <div className="flex flex-col items-start w-full md:w-1/2">
                     <h2 className="md:text-4xl font-bold mt-5">Planning your next Big Move?</h2>
@@ -83,7 +83,7 @@ export default function Presentation() {
             </div>
             {/* Footer */}
             <div className="mb-10">
-                <h3 className="md:text-5xl font-bold">THE FUTURE IS JUST ONE CLICK AWAY</h3>
+                <h3 className="text-2xl md:text-5xl font-bold">THE FUTURE IS JUST ONE CLICK AWAY</h3>
             </div>
         </div>
     )
