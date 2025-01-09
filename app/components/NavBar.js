@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className="flex space-x-5 lg:space-x-10 text-xl md:text-2xl lg:text-3xl">
           <NavLink
             href="/"
-            className="hidden md:inline-block lg:inline-block text-2xl lg:text-4xl font-bold"
+            className="hidden md:inline-block lg:inline-block text-xl lg:text-4xl font-extrabold"
           >
             Trillion Fundation
           </NavLink>
@@ -73,7 +73,7 @@ export default function Navbar() {
 
           <NavLink
             href="/why-choose-us"
-            className="hidden sm:block text-xl lg:text-3xl"
+            className="hidden sm:block text-xl lg:text-3xl font-bold"
           >
             Why Choose Us
           </NavLink>
@@ -101,7 +101,7 @@ export default function Navbar() {
         </button>
 
         {/* Enlaces visibles solo en pantallas grandes */}
-        <div className=" hidden sm:flex justify-center space-x-4 lg:space-x-14 text-xl lg:text-3xl">
+        <div className=" hidden sm:flex justify-center space-x-4 lg:space-x-14 text-xl lg:text-3xl font-bold">
           <NavLink href="/about">About Us</NavLink>
           <NavLink href="/services">Services</NavLink>
           <NavLink href="/contact">Contact</NavLink>
