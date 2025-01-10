@@ -9,7 +9,7 @@ export default function IntroSection({ style }) {
         <h1 className="font-bold text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl tracking-widest text-yellow-400">
           Services
         </h1>
-        <p className="text-md sm:text-xl xl:text-xl 2xl:text-2xl font-semibold tracking-wider">
+        <p className="text-lg sm:text-xl xl:text-xl 2xl:text-2xl font-semibold tracking-wider">
           Ready to take the next step? Let’s make it happen
         </p>
       </div>
