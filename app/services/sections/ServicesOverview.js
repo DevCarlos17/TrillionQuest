@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import Button from './Button';
 
-export default function Services3() {
+export default function ServicesOverview() {
   return (
-    <div className="container mx-auto h-[130vh] md:h-[100vh] w-auto">
+    <div className="min-h-screen w-[100vw] mx-auto">
       <div className="border mb-5 md:hidden" />
-      <div className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-32 mb-10">
+      <div className="flex flex-col md:flex-row justify-center gap-8 sm:gap-32 mb-10">
         {/* Experience */}
         <div className="flex sm:flex-col items-center justify-center text-center ">
           <Image
