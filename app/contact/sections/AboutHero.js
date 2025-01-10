@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function AboutHero() {
   return (
     <>
-      <section className=" w-full h-[70vh] sm:flex flex-col justify-end overflow-hidden ">
+      <section className=" w-full h-[70vh] sm:flex flex-col justify-end overflow-hidden">
         <div className="flex flex-col justify-center items-center shadow-custom">
           {/* Background */}
           <div className="w-[60vh] h-[60vh] sm:w-[60vh] sm:h-[60vh] ">
