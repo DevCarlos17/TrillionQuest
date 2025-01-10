@@ -9,6 +9,7 @@ import SocialMedia from './sections/SocialMedia';
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white">
+      {/*
       <Home />
       <Goals />
       <Parther />
@@ -16,6 +17,7 @@ export default function App() {
       <SocialMedia />
       <AdsToSoftware />
       <OurTeam />
+       */}
     </div>
   );
 }
