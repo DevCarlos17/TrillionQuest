@@ -6,12 +6,12 @@ export default function IntroSection({ style }) {
       className={`flex flex-col w-auto h-auto justify-start items-start ml-5 tracking-widest ${style}`}
     >
       <div className="flex flex-col w-full h-full ">
-        <span className="text-4xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
+        <h1 className="font-bold text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl tracking-widest text-yellow-400">
           Services
-        </span>
-        <span className="text-lg  md:text-xl lg:text-2xl font-bold text-white">
+        </h1>
+        <p className="text-md sm:text-xl xl:text-xl 2xl:text-2xl font-semibold tracking-wider">
           Ready to take the next step? Let’s make it happen
-        </span>
+        </p>
       </div>
       <Button
         name="Book a Call"
