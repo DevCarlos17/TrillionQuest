@@ -34,7 +34,7 @@ export default function Parther() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center md:justify-start text-2xl lg:text-5xl space-x-4">
+        <div className="flex items-center justify-center lg:justify-start text-2xl lg:text-5xl space-x-4">
           <h1 className="font-bold">100+</h1>
           <div className="flex items-center -space-x-5">
             {/* Imagenes circulares */}
@@ -60,16 +60,16 @@ export default function Parther() {
           </div>
         </div>
 
-        <div className="flex flex-col md:mr-64 items-center lg:flex-row lg:justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+        <div className="flex flex-col  items-center lg:flex-row lg:justify-start space-y-4 lg:space-y-0 lg:space-x-4">
           {/* Botón con flecha */}
           <a
             href="#"
-            className="uppercase tracking-widest px-2 py-1 md:py-3 border border-white/50 bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 text-yellow-500 font-bold rounded-full transition-transform duration-700 text-2xl hover:scale-110 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-yellow-400 hover:to-yellow-300 hover:text-gray-900  flex items-center justify-center space-x-2"
+            className="uppercase tracking-widest px-2 py-1 md:py-3 md:px-4 border border-white/50 bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 text-yellow-500 font-bold rounded-full transition-transform duration-700 text-2xl hover:scale-110 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-yellow-400 hover:to-yellow-300 hover:text-gray-900  flex items-center justify-center space-x-2"
           >
-            <div className="flex items-center w-[30vw]">
-              <span className="text-sm lg:text-2xl">Learn More</span>
-              <FaArrowDown className="block md:hidden ml-6 h-10 w-8" />
-              <FaArrowRight className="hidden md:block ml-8 h-8 w-6" />
+            <div className="flex items-center">
+              <span className="text-lg lg:text-2xl">Learn More</span>
+              <FaArrowDown className="block lg:hidden ml-6 h-10 w-8" />
+              <FaArrowRight className="hidden lg:block ml-8 h-8 w-6" />
             </div>
           </a>
 
