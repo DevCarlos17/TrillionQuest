@@ -1,12 +1,11 @@
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
-import { FaArrowRight } from "react-icons/fa";
-import { FaArrowDown } from "react-icons/fa";
+import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowDown } from 'react-icons/fa';
 import Image from 'next/image';
 
 export default function Parther() {
   return (
     <div className="flex flex-col lg:flex-row lg:px-10 lg:py-14 items-center lg:items-start justify-center space-y-10 lg:space-y-0 lg:space-x-20 font-semibold">
-
       {/* Logo */}
       <div className="lg:w-[40%] flex justify-center lg:justify-end">
         <Image
@@ -39,7 +38,12 @@ export default function Parther() {
           <h1 className="font-bold">100+</h1>
           <div className="flex items-center -space-x-5">
             {/* Imagenes circulares */}
-            {['/images/img1.png', '/images/image2.jpg', '/images/image3.jpg', '/images/image4.jpg'].map((src, index) => (
+            {[
+              '/images/img1.png',
+              '/images/image2.jpg',
+              '/images/image3.jpg',
+              '/images/image4.jpg',
+            ].map((src, index) => (
               <div
                 key={index}
                 className="w-20 h-20 rounded-full overflow-hidden cursor-pointer hover:z-50 hover:scale-150 transition-transform duration-700"
@@ -60,10 +64,11 @@ export default function Parther() {
           {/* Botón con flecha */}
           <a
             href="#"
-            className="uppercase tracking-widest px-6 py-1 md:py-3 border border-white/50 bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 text-yellow-500 font-bold rounded-full transition-transform duration-700 text-2xl hover:scale-110 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-yellow-400 hover:to-yellow-300 hover:text-gray-900 relative flex items-center justify-center space-x-3">
-            <div className="flex items-center">
-              <span className='text-sm md:text-2xl'>Learn More</span>
-              <FaArrowDown className='block md:hidden ml-6 h-10 w-8' />
+            className="uppercase tracking-widest px-2 py-1 md:py-3 border border-white/50 bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 text-yellow-500 font-bold rounded-full transition-transform duration-700 text-2xl hover:scale-110 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-yellow-400 hover:to-yellow-300 hover:text-gray-900  flex items-center justify-center space-x-2"
+          >
+            <div className="flex items-center w-[30vw]">
+              <span className="text-sm lg:text-2xl">Learn More</span>
+              <FaArrowDown className="block md:hidden ml-6 h-10 w-8" />
               <FaArrowRight className="hidden md:block ml-8 h-8 w-6" />
             </div>
           </a>
@@ -98,8 +103,8 @@ export default function Parther() {
         </div>
 
         <div className="text-sm md:text-2xl text-white">
-          We redefine marketing strategies with innovation and creativity,
-          We transform vision into impactful realities.
+          We redefine marketing strategies with innovation and creativity, We
+          transform vision into impactful realities.
         </div>
       </div>
     </div>
