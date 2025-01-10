@@ -5,103 +5,57 @@ import Services3 from '../components/Services3';
 
 export default function Services() {
   return (
-    <div className="relative">
-      <div className="grid md:grid-cols-3 gap-4 w-full h-[100vh] z-0">
-        {/* Columna izquierda */}
-        <div className="flex flex-col items-center">
-          <Image
-            className="absolute w-[80vh] mr-40 h-[80vh] z-0"
-            src="/images/Planet3.svg"
-            alt="background"
-            width={600}
-            height={600}
-          />
-        </div>
+    <>
+      <div className="w-full h-full flex items-center">
+        <div className="w-full h-[35vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[100vh]  flex justify-between items-center">
+          {/* Contenedor izquierdo */}
+          <div className="h-full w-[35%] flex justify-start z-10">
+            <Image
+              src="/images/Planet3.svg"
+              alt="Planet 3"
+              width={500}
+              height={500}
+              className="h-full object-cover"
+            />
+          </div>
 
-        {/* Columna central */}
-        <div className="relative flex justify-center items-center w-[60vh] h-[60vh]">
-          {/* Background */}
-          <Image
-            className="absolute top-0 left-0 w-full h-full"
-            src="/images/background.svg"
-            alt="background"
-            width={600}
-            height={600}
-          />
+          {/* Contenedor central */}
+          <div className="h-full w-[45%] lg:w-[42%] xl:w-[40%] flex justify-center items-center relative">
+            {/* Background */}
+            <section className="relative w-full h-full flex justify-center items-center">
+              <Image
+                src="/images/background2.svg"
+                alt="background"
+                width={500}
+                height={500}
+                className="absolute w-full h-[100%] -translate-y-10"
+              />
+              {/* Logo Trillion */}
+              <Image
+                src="/images/LogoTrillion.svg"
+                alt="Logo Trillion"
+                width={500}
+                height={500}
+                className="absolute w-[100%] h-auto"
+              />
+            </section>
+          </div>
 
-          {/* Mini planetas */}
-          <Image
-            src="/images/MiniPlanet1.svg"
-            width={800}
-            height={800}
-            alt="logoTrillion"
-            className="absolute w-[10vh] h-[15vh] top-5 mt-7 z-10"
-          />
-          <Image
-            src="/images/MiniPlanet1.svg"
-            width={800}
-            height={800}
-            alt="logoTrillion"
-            className="absolute w-[7vh] h-[7vh] top-6 z-10"
-          />
-          <Image
-            src="/images/MiniPlanet1.svg"
-            width={800}
-            height={800}
-            alt="logoTrillion"
-            className="absolute w-[3vh] h-[3vh] -top-2 z-10"
-          />
-
-          {/* Logo Trillion */}
-          <Image
-            src="/images/logoTrillion.svg"
-            width={800}
-            height={800}
-            alt="logoTrillion"
-            className="relative mt-20 w-[80vh] h-[80vh] z-10"
-          />
-
-          {/* Mini planetas inferiores */}
-          <Image
-            src="/images/MiniPlanet1.svg"
-            width={800}
-            height={800}
-            alt="logoTrillion"
-            className="absolute w-[10vh] h-[15vh] bottom-24 z-10"
-          />
-          <Image
-            src="/images/MiniPlanet1.svg"
-            width={800}
-            height={800}
-            alt="logoTrillion"
-            className="absolute w-[7vh] h-[7vh] bottom-16 z-10"
-          />
-          <Image
-            src="/images/MiniPlanet1.svg"
-            width={800}
-            height={800}
-            alt="logoTrillion"
-            className="absolute w-[3vh] h-[3vh] bottom-7 z-10"
-          />
-        </div>
-
-        {/* Columna derecha */}
-        <div className="flex flex-col mr-44 items-center">
-          <Image
-            className="absolute w-[80vh] h-[80vh] z-0"
-            src="/images/Planet4.svg"
-            alt="background"
-            width={600}
-            height={600}
-          />
+          {/* Contenedor derecho */}
+          <div className="h-full w-[35%] flex justify-end z-10">
+            <Image
+              src="/images/Planet4.svg"
+              alt="Planet 4"
+              width={500}
+              height={500}
+              className="h-full object-cover"
+            />
+          </div>
         </div>
       </div>
-
-      <div className="w-full flex z-20 absolute top-96">
-        <ServicesText />
-      </div>
+      <ServicesText />
       <Services2 />
       <Services3 />
-    </div>
+    </>
   );
 }
