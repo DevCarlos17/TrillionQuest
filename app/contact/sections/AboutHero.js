@@ -42,9 +42,8 @@ export default function AboutHero() {
           </div>
         </div>
       </section>
-      {/* Boton */}
 
-      <div className="absolute  bottom-0 sm:-bottom-10 lg:bottom-16 xl:bottom-20 w-full flex flex-col justify-center space-y-8 h-[30%] z-0 px-4 sm:px-10 xl:px-16">
+      <div className="absolute  bottom-0 sm:-bottom-10 lg:bottom-16 xl:bottom-20 w-full flex flex-col justify-center space-y-8 h-[30%] z-30 px-4 sm:px-10 xl:px-16">
         <span className="uppercase space-y-4">
           <h1 className="font-bold text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl tracking-wide text-yellow-400">
             contact us
