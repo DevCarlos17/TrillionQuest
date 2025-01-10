@@ -7,7 +7,7 @@ import Services3 from "../components/Services3";
 export default function Services() {
     return (
         <div className="relative">
-            <div className="grid md:grid-cols-3 gap-4 w-full h-[80vh] md:h-[100vh] z-0">
+            <div className=" grid md:grid-cols-3 gap-4 w-[80vh] h-[80vh] md:h-[100vh] z-0">
                 {/* Columna izquierda */}
                 <div className="flex flex-col items-center">
                     <Image
@@ -20,7 +20,7 @@ export default function Services() {
                 </div>
 
                 {/* Columna central */}
-                <div className="relative flex justify-center items-center -top-5 md:top-0 ml-20 md:ml-0 w-[40vh] h-[40vh] md:w-[60vh] md:h-[60vh]">
+                <div className="relative flex justify-center items-center md:top-0 ml-20 md:ml-0 w-[40vh] h-[40vh] md:w-[60vh] md:h-[60vh]">
                     {/* Background */}
                     <Image
                         className="absolute md:top-0"
@@ -63,27 +63,6 @@ export default function Services() {
                     />
 
                     {/* Mini planetas inferiores */}
-                    <Image
-                        src="/images/MiniPlanet1.svg"
-                        width={800}
-                        height={800}
-                        alt="logoTrillion"
-                        className="absolute w-[10vh] h-[15vh] bottom-24 z-10"
-                    />
-                    <Image
-                        src="/images/MiniPlanet1.svg"
-                        width={800}
-                        height={800}
-                        alt="logoTrillion"
-                        className="absolute w-[7vh] h-[7vh] bottom-16 z-10"
-                    />
-                    <Image
-                        src="/images/MiniPlanet1.svg"
-                        width={800}
-                        height={800}
-                        alt="logoTrillion"
-                        className="absolute w-[3vh] h-[3vh] bottom-7 z-10"
-                    />
                 </div>
 
                 {/* Columna derecha */}

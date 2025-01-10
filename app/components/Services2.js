@@ -1,14 +1,12 @@
 export default function Services2() {
     return (
         <div className="container flex flex-col mx-auto h-[80vh] md:h-[105vh] md:-mt-8">
-            <div className="flex justify-center  h-[25vh] mb-5">
-                <button className="border w-[90%] sm:w-[80%] sm:h-[20vh] md:w-[50%] border-white
-        bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+            <div className="flex justify-center py-8 h-[25vh] mb-5">
+                <button className="border-2 w-[90%] sm:w-[80%] 
+        sm:h-[20vh] md:w-[50%] border-yellow-400
         text-white font-bold rounded-full
-        transition-transform duration-300 text-4xl
-        hover:scale-110 hover:bg-gradient-to-r 
-        hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
-        hover:text-gray-900 ">
+        transition transform duration-700 text-4xl
+        animate-glow">
                     SOCIAL MEDIA MANAGEMENT
                 </button>
 
@@ -24,25 +22,21 @@ export default function Services2() {
                     </span>
                 </div>
             </div>
-            <div className="flex justify-center md:justify-end h-[25vh]">
-                <button className="border w-[90%] sm:w-[80%] sm:h-[20vh] md:py-1 md:w-[50%] border-white
-        bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+            <div className="flex justify-center py-10 md:justify-end h-[25vh]">
+                <button className="border-2 w-[90%] sm:w-[80%] 
+        sm:h-[20vh] md:w-[50%] border-yellow-400
         text-white font-bold rounded-full
-        transition-transform duration-300 text-4xl
-        hover:scale-110 hover:bg-gradient-to-r 
-        hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
-        hover:text-gray-900 ">
+        transition transform duration-700 text-4xl
+        animate-glow px-5">
                     ADS & SALES FUNNELS
                 </button>
             </div>
-            <div className="flex justify-center md:flex-col mt-5 md:ml-12">
-                <button className="border w-[90%] py-16 sm:w-[80%] sm:h-[20vh] md:w-[50%] mb-5 border-white
-        bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+            <div className="flex justify-center mt-7 md:flex-col md:ml-12">
+                <button className="border-2 w-[90%] sm:w-[80%] 
+        sm:h-[20vh] md:w-[50%] border-yellow-400
         text-white font-bold rounded-full
-        transition-transform duration-300 text-4xl
-        hover:scale-110 hover:bg-gradient-to-r 
-        hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
-        hover:text-gray-900">
+        transition transform duration-700 py-5 text-4xl
+        animate-glow px-5 mb-5">
                     BUSINESS DEVELOPMENT
                 </button>
                 <span className="justify-start ml-10 text-white text-2xl font-bold w-full hidden sm:block">

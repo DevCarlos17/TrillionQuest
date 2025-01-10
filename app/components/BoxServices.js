@@ -53,7 +53,7 @@ export default function BoxServices() {
         </div>
 
         {/* Cuadro central más grande */}
-        <div className="group relative z-20 hover:z-40 transition-all duration-300">
+        <div className="group relative z-20 hover:z-40 transition-all duration-700">
           <div className="group relative flex flex-col items-center p-4 animate-glow bg-black"
             style={{
               width: "405px",
@@ -87,9 +87,9 @@ export default function BoxServices() {
         </div>
 
         {/* Cuadro derecho */}
-        <div className="group relative z-10 hover:z-40 transition-all duration-300 bg-black">
+        <div className="group relative z-10 hover:z-40 transition-all duration-700">
           <motion
-            className="relative flex flex-col justify-between items-center rounded-lg p-4 animate-glow ml-16 group bg-black"
+            className="relative flex flex-col justify-between items-center rounded-lg p-4 animate-glow ml-16 group"
             style={{
               width: '340px',
               height: '521px',
