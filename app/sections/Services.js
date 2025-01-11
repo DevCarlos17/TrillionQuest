@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ServicesText from '../services/components/IntroSection';
+import ServicesText from '../services/components/SectionIntro_No_Absolute';
 import Services2 from '../services/sections/BusinessSolutions';
 import Services3 from '../services/sections/ServicesOverview';
 

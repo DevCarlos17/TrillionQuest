@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import IntroSection from '../components/IntroSection';
+
+import SectionIntro from '@/app/components/SectionIntro';
 
 export default function ServicesHero() {
   return (
@@ -16,7 +17,7 @@ export default function ServicesHero() {
       </div>
 
       {/* Contenedor central */}
-      <div className="h-full w-[45%] lg:w-[42%] xl:w-[40%] flex justify-center items-center relative">
+      <div className="h-full w-[45%] sm:w-[43%] lg:w-[42%] xl:w-[40%] flex justify-center items-center relative">
         {/* Background */}
         <section className="relative w-full h-full flex justify-center items-center">
           <Image
@@ -89,10 +90,13 @@ export default function ServicesHero() {
           className="h-full object-cover"
         />
       </div>
-      <IntroSection
-        style={
-          'hidden sm:block absolute bottom-0 left-0 z-40 -translate-y-5 md:-translate-y-10 xl:-translate-y-36 space-y-10 '
-        }
+
+      <SectionIntro
+        positionClasses=" absolute bottom-10 lg:bottom-16 xl:bottom-44 w-full"
+        customStyles="hidden sm:flex"
+        headingText="Services"
+        paragraphText="Ready to take the next step? Let’s make it happen"
+        buttonStyles="md:w-[30%] lg:w-[25%] xl:w-[20%] 2xl:w-[20%]"
       />
     </div>
   );

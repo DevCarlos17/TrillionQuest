@@ -1,6 +1,6 @@
 import Button from '../../components/Button';
 
-export default function IntroSection({ style }) {
+export default function SectionIntro_No_Absolute({ style }) {
   return (
     <div
       className={`flex flex-col w-auto h-auto justify-start items-start ml-5 tracking-widest ${style}`}
