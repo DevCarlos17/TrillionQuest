@@ -5,8 +5,6 @@ import BusinessSoulution from './sections/BusinessSolution';
 import OurTeam from './sections/OurTeam';
 import Parther from './sections/Partner';
 import SocialMedia from './sections/SocialMedia';
-import Footer from './components/Footer';
-import SubFooter from './components/SubFooter';
 
 export default function App() {
   return (
