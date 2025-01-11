@@ -56,10 +56,6 @@ export default function MeetOurTeam() {
           'hidden md:block md:text-xl lg:text-2xl  md:w-[25vw] lg:w-[23vw] xl:w-[15vw] 2xl:w-[15vw] tracking-widest md:py-3 2xl:py-4'
         }
       />
-      <div className="h-[50vh] w-full">
-        <SubFooter />
-      </div>
-      <Footer />
     </div>
   );
 }

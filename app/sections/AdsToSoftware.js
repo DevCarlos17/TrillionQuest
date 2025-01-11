@@ -1,25 +1,35 @@
-import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
+"use client"
+
+import { FaLinkedin, FaInstagram, FaWhatsappSquare, FaTiktok } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
 import Image from 'next/image';
 import Button from '../components/Button';
+import { motion } from "framer-motion";
 
 export default function AdsToSoftware() {
   return (
-    <div className="min-h-screen w-full bg-black">
+    <div className="min-h-screen w-full">
       <div className="p-4 mx-auto md:flex justify-center items-center">
         {/*section 1 */}
         <section className="flex flex-col justify-evenly items-center md:items-start space-y-8 md:space-y-20">
           <div className="text-white ">
-            <h1 className="text-3xl  md:text-5xl font-extrabold mb-8 text-center md:text-start">
+            <motion.h1 className="text-3xl md:text-5xl font-extrabold mb-8 text-center md:text-start"
+              initial={{ x: "50vw", opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 1.5, ease: "easeOut" }} >
               From Ads to <br />
               Software development
-            </h1>
-            <p className="text-2xl lg:text-2xl xl:text-3xl text-center md:text-start">
-              We have expert for each field in the digital world <br /> we offer
-              a wide spectrum of services, mejora <br /> esta informacion para
-              un sitio web, potencialos a <br /> generar clientes y que sea
-              profesional.
-            </p>
+            </motion.h1>
+            <motion.p className="text-2xl lg:text-2xl xl:text-3xl text-center md:text-start"
+              initial={{ x: "50vw", opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}>
+              We have proven experts in every aspect of the digital <br />
+              landscape, offering a comprehensive range of services <br />
+              to elevate your brand and deliver measurable results.
+            </motion.p>
           </div>
           {/*  Phone Ads Mobile */}
           <div className="hidden sm:block md:hidden ">
@@ -129,28 +139,37 @@ export default function AdsToSoftware() {
                 <FaArrowRight className="h-4 md:h-8 w-6 md:w-6" />
               </Button>
               {/* Iconos de redes sociales */}
-              <div className="flex space-x-8 mt-4 md:mt-0 text-white">
+              <div className="hidden sm:flex space-x-4 md:space-x-6  gl:mt-10 ml-20 md:ml-56">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.tiktok.com/@trillionquest?_t=ZT-8stpLos8kec&_r=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-yellow-500 hover:scale-150 transition-transform duration-200 "
+                  className="hover:text-yellow-500 hover:scale-150 text-white  transition-transform duration-700"
+                >
+                  <FaTiktok size={40} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/trillionquest_?igsh=MWwwbnprYnpneDV4bg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
                 >
                   <FaInstagram size={40} />
                 </a>
                 <a
-                  href="https://facebook.com"
+                  href="https://www.linkedin.com/company/trillionquest/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-yellow-500 hover:scale-150 transition-transform duration-200"
+                  className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
                 >
-                  <FaFacebook size={40} />
+                  <FaWhatsappSquare size={40} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/trillionquest/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-yellow-500 hover:scale-150 transition-transform duration-200"
+                  className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
                 >
                   <FaLinkedin size={40} />
                 </a>

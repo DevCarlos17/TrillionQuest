@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Button from '../components/Button';
 
+
 const images = ['/images/chat1.svg', '/images/chat2.svg', '/images/chat3.svg'];
 
 export default function SocialMedia() {
@@ -19,7 +20,7 @@ export default function SocialMedia() {
   }, []);
 
   return (
-    <div className=" mx-auto h-[100vh] w-full flex items-center justify-center">
+    <div className=" mx-auto h-[50vh] md:h-[70vh] w-full flex items-center justify-center">
       <div className="h-auto w-full text-white flex justify-around md:justify-center items-center space-x-16 md:space-x-0 ">
         {/* Imagen de teléfono */}
 
@@ -50,17 +51,26 @@ export default function SocialMedia() {
         </div>
 
         <div className="mt-8 w-[40vw] h-[50vh] md:space-y-20 text-start md:text-right lg:text-left">
-          <p className="text-2xl md:text-4xl lg:text-5xl font-bold">
+          <motion.p className="text-2xl md:text-4xl lg:text-5xl font-bold"
+            initial={{ x: "20vw", opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}>
             Social Media Expertise
-          </p>
-          <p className="text-white text-lg md:text-3xl mt-6 md:mt-12 ">
+          </motion.p>
+          <motion.p className="text-white text-lg md:text-3xl mt-6 md:mt-12 "
+            initial={{ x: "20vw", opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}>
+
             Personalized strategies, improved
             <br />
             visibility, and fostering genuine
             <br />
             connections with your target audience <br />
             across all platforms.
-          </p>
+          </motion.p>
           <Button
             name={'Learn More'}
             style={
