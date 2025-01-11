@@ -1,6 +1,5 @@
-import NavLink from '@/app/components/NavLink';
 import Image from 'next/image';
-import BookACall from '../components/BookACall';
+import SectionIntro from '@/app/components/SectionIntro';
 
 export default function Main() {
   return (
@@ -98,8 +97,13 @@ export default function Main() {
           height={1200}
         />
       </div>
+
       {/*Book a call */}
-      <BookACall />
+      <SectionIntro
+        positionClasses="absolute bottom-10 lg:bottom-16 xl:bottom-32 w-full"
+        headingText="why choose us"
+        paragraphText="ready to make the next step? let's make it happen"
+      />
     </div>
   );
 }
