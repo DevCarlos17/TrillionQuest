@@ -10,11 +10,11 @@ export default function AdsToSoftware() {
         {/*section 1 */}
         <section className="flex flex-col justify-evenly items-center md:items-start space-y-8 md:space-y-20">
           <div className="text-white ">
-            <h1 className="text-3xl  md:text-5xl font-extrabold mb-8 text-center md:text-start">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 text-center md:text-start">
               From Ads to <br />
               Software development
             </h1>
-            <p className="text-2xl lg:text-2xl xl:text-3xl text-center md:text-start">
+            <p className="text-xl lg:text-2xl xl:text-3xl text-center md:text-start">
               We have expert for each field in the digital world <br /> we offer
               a wide spectrum of services, mejora <br /> esta informacion para
               un sitio web, potencialos a <br /> generar clientes y que sea
@@ -22,7 +22,7 @@ export default function AdsToSoftware() {
             </p>
           </div>
           {/*  Phone Ads Mobile */}
-          <div className="hidden sm:block md:hidden ">
+          <div className=" md:hidden ">
             <Image
               className="sm: h-[50vh] w-[50vh]"
               src={'/images/phoneAds.svg'}
@@ -33,7 +33,7 @@ export default function AdsToSoftware() {
           </div>
 
           <div className="text-white  justify-end flex items-end p-4 ">
-            <ul className="text-2xl lg:text-2xl xl:text-3xl">
+            <ul className="text-xl lg:text-2xl xl:text-3xl">
               <li className="mb-4 flex items-center">
                 • Personalized Marketing Campaigns
                 <Image
