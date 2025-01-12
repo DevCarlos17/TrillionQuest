@@ -1,6 +1,7 @@
 "use client";
 
-import { FaLinkedin, FaInstagram, FaWhatsappSquare, FaTiktok, FaArrowRight, FaArrowDown } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaTiktok, FaArrowRight, FaArrowDown } from 'react-icons/fa';
+import { IoLogoWhatsapp } from "react-icons/io";
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from "react";
 
@@ -139,7 +140,7 @@ export default function Parther() {
               rel="noopener noreferrer"
               className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
             >
-              <FaWhatsappSquare size={40} />
+              <IoLogoWhatsapp size={40} />
             </a>
             <a
               href="https://www.linkedin.com/company/trillionquest/"

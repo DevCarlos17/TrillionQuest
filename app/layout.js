@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import SubFooter from './components/SubFooter';
 import Footer from './components/Footer';
+import SocialMediaSidebar from './components/SocialMediaSidebar';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
+        <SocialMediaSidebar />
         <div className="min-h-screen bg-black text-white ">{children}</div>
         <SubFooter />
         <Footer />

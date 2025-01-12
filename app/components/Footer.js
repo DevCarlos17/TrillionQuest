@@ -1,4 +1,6 @@
 import { FaLinkedin, FaInstagram, FaWhatsappSquare, FaTiktok } from 'react-icons/fa';
+import { IoLogoWhatsapp } from "react-icons/io";
+
 
 export default function Footer() {
   return (
@@ -49,7 +51,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
         >
-          <FaWhatsappSquare size={40} />
+          <IoLogoWhatsapp size={40} />
         </a>
         <a
           href="https://www.linkedin.com/company/trillionquest/"

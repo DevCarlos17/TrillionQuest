@@ -1,6 +1,7 @@
 "use client";
 
-import { FaLinkedin, FaInstagram, FaWhatsappSquare, FaTiktok } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTiktok } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import Button from "../components/Button";
@@ -101,7 +102,7 @@ export default function AdsToSoftware() {
                 {[
                   { href: "https://www.tiktok.com/@trillionquest?_t=ZT-8stpLos8kec&_r=1", Icon: FaTiktok },
                   { href: "https://www.instagram.com/trillionquest_?igsh=MWwwbnprYnpneDV4bg==", Icon: FaInstagram },
-                  { href: "https://www.linkedin.com/company/trillionquest/", Icon: FaWhatsappSquare },
+                  { href: "https://www.linkedin.com/company/trillionquest/", Icon: IoLogoWhatsapp },
                   { href: "https://www.linkedin.com/company/trillionquest/", Icon: FaLinkedin },
                 ].map(({ href, Icon }, idx) => (
                   <a
