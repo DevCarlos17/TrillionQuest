@@ -27,6 +27,27 @@ export default function ServicesHero() {
             height={500}
             className="absolute w-full h-[100%] -translate-y-10"
           />
+          <Image
+            src="/images/MiniPlanet1.svg"
+            width={500}
+            height={500}
+            alt="logoTrillion"
+            className="absolute md:w-[12vh] h-[7vh] w-[7vh] md:h-[12vh] top-12 md:top-16 lg:top-20 xl:top-48 z-10"
+          />
+          <Image
+            src="/images/MiniPlanet1.svg"
+            width={500}
+            height={500}
+            alt="logoTrillion"
+            className="absolute h-[5vh] w-[5vh] md:w-[7vh] md:h-[7vh] top-5 md:top-8 lg:top-10 xl:top-32 z-10"
+          />
+          <Image
+            src="/images/MiniPlanet1.svg"
+            width={500}
+            height={500}
+            alt="logoTrillion"
+            className="absolute h-[3vh] w-[3vh] md:w-[5vh] md:h-[5vh] top-1 md:top-2 lg:top-3 xl:top-20 z-10"
+          />
           {/* Logo Trillion */}
           <Image
             src="/images/LogoTrillion.svg"
@@ -34,6 +55,27 @@ export default function ServicesHero() {
             width={500}
             height={500}
             className="absolute w-[100%] h-auto"
+          />
+          <Image
+            src="/images/MiniPlanet1.svg"
+            width={500}
+            height={500}
+            alt="logoTrillion"
+            className="absolute h-[7vh] w-[7vh] md:w-[12vh] md:h-[12vh] bottom-20 md:bottom-32 lg:bottom-40 xl:bottom-72 z-10"
+          />
+          <Image
+            src="/images/MiniPlanet1.svg"
+            width={500}
+            height={500}
+            alt="logoTrillion"
+            className="absolute h-[5vh] w-[5vh] md:w-[7vh] md:h-[7vh] bottom-14 md:bottom-24 lg:bottom-32 xl:bottom-60 z-10"
+          />
+          <Image
+            src="/images/MiniPlanet1.svg"
+            width={500}
+            height={500}
+            alt="logoTrillion"
+            className="absolute h-[3vh] w-[3vh] md:w-[5vh] md:h-[5vh] bottom-10 md:bottom-16 lg:bottom-24 xl:bottom-48 z-10"
           />
         </section>
       </div>

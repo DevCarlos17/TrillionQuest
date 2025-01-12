@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "framer-motion";
 import AboutCard from '../components/AboutCard';
 import AboutCollageImages from '../components/AboutImagesCollage';
 import CardWithImage from '../components/CardWithImage';
@@ -6,9 +9,13 @@ export default function MisionVision() {
   return (
     <section className="min-h-screen w-full flex flex-col lg:justify-around items-center space-y-24 ">
       <div>
-        <h1 className="text-4xl md:text-5xl font-bold bg-center w-full">
+        <motion.h1 className="text-4xl md:text-5xl font-bold bg-center w-full text-center"
+          initial={{ x: "20vw", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 3, ease: "easeOut" }}>
           We are partners in your journey to greatness
-        </h1>
+        </motion.h1>
       </div>
       {/* Cards */}
       <div className="flex flex-col justify-center lg:flex-row items-center w-full h-[80%] md:w-[80%] 2xl:h-[80%] md:space-x-10   ">

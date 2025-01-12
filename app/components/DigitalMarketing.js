@@ -1,4 +1,5 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
+import { FaWhatsappSquare, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 const DigitalMarketing = () => {
   return (
@@ -7,13 +8,18 @@ const DigitalMarketing = () => {
         sm:from-black sm:via-gray-950 sm:to-white md:bg-gradient-to-r md:from-black md:via-gray-950 md:to-white"
     >
       {/* Título de Digital Marketing */}
-      <span className=" text-2xl md:text-4xl font-bold tracking-wider right-52 text-white whitespace-nowrap md:whitespace-normal">
+      <motion.span
+        className="text-2xl md:text-4xl font-bold tracking-wider right-52 text-white whitespace-nowrap md:whitespace-normal"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 3, ease: "easeOut" }}
+      >
         Digital Marketing
-      </span>
+      </motion.span>
 
       <div className="hidden sm:flex space-x-4 md:space-x-6  gl:mt-10 ml-20 md:ml-56">
         <a
-          href="https://facebook.com/"
+          href="https://www.tiktok.com/@trillionquest?_t=ZT-8stpLos8kec&_r=1"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-yellow-500 hover:scale-150 text-black  transition-transform duration-700"
@@ -22,7 +28,7 @@ const DigitalMarketing = () => {
         </a>
 
         <a
-          href="https://instagram.com/"
+          href="https://www.instagram.com/trillionquest_?igsh=MWwwbnprYnpneDV4bg=="
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-yellow-500 hover:scale-150 text-black transition-transform duration-700"
@@ -30,15 +36,15 @@ const DigitalMarketing = () => {
           <FaInstagram size={40} />
         </a>
         <a
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/company/trillionquest/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-yellow-500 hover:scale-150 text-black transition-transform duration-700"
         >
-          <FaFacebook size={40} />
+          <FaWhatsappSquare size={40} />
         </a>
         <a
-          href="https://twitter.com/"
+          href="https://www.linkedin.com/company/trillionquest/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-yellow-500 hover:scale-150 text-black transition-transform duration-700"
