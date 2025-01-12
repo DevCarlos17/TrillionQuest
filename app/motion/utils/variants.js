@@ -2,7 +2,7 @@ const slideInFromRight = {
   hidden: {
     x: '100%',
     opacity: 0,
-    transition: { duration: 0.5, delay: 0.2 },
+    transition: { duration: 0.5 },
   },
   visible: {
     x: 0,
@@ -18,7 +18,7 @@ const slideInFromRight = {
 
 const slideInFromLeft = {
   hidden: {
-    x: '-100%',
+    x: '-88%',
     opacity: 0,
     transition: { duration: 0.5 },
   },

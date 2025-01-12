@@ -8,10 +8,10 @@ import SocialMedia from './sections/SocialMedia';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white w-full">
       <Home />
-      <Goals />
       <Parther />
+      <Goals />
       <BusinessSoulution />
       <SocialMedia />
       <AdsToSoftware />

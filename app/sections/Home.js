@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Image from 'next/image';
 import LightRing from '../components/LightRing';
@@ -6,8 +6,7 @@ import DigitalMarketing from '../components/DigitalMarketing';
 import Button from '../components/Button';
 import LightPoint from '../components/LightPoint';
 import Form from '../components/Form';
-import { motion } from "framer-motion";
-
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -37,7 +36,7 @@ export default function Home() {
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 3, ease: "easeOut" }}
+              transition={{ duration: 1.3, ease: 'easeOut' }}
             >
               <Image
                 className="w-[60vh] h-[60vh]"

@@ -18,7 +18,7 @@ const AnimatedDiv = ({
       variants={variants}
       initial={initial}
       animate={isInView ? animate : initial}
-      className={`flex items-center justify-center ${className}`}
+      className={`${className}`}
     >
       {children}
     </motion.div>
