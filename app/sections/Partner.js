@@ -1,9 +1,5 @@
 'use client';
-
-<<<<<<< HEAD
-import { FaLinkedin, FaInstagram, FaTiktok, FaArrowRight, FaArrowDown } from 'react-icons/fa';
-import { IoLogoWhatsapp } from "react-icons/io";
-=======
+import { IoLogoWhatsapp } from 'react-icons/io';
 import {
   FaLinkedin,
   FaInstagram,
@@ -12,7 +8,7 @@ import {
   FaArrowRight,
   FaArrowDown,
 } from 'react-icons/fa';
->>>>>>> 47a7f88fe3ce0ccb8352e99dbcab56f0726ec613
+
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 import AnimatedDiv from '../motion/components/AnimateDiv';
@@ -133,8 +129,7 @@ export default function Parther() {
                 </div>
               ))}
             </div>
-<<<<<<< HEAD
-          </a>
+          </div>
 
           {/* Iconos de redes sociales */}
           <div className="hidden sm:flex space-x-4 md:space-x-6 gl:mt-10 ml-20 md:ml-56">
@@ -171,8 +166,6 @@ export default function Parther() {
             >
               <FaLinkedin size={40} />
             </a>
-=======
->>>>>>> 47a7f88fe3ce0ccb8352e99dbcab56f0726ec613
           </div>
         </AnimatedDiv>
 
