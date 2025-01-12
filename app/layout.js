@@ -28,10 +28,15 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
+<<<<<<< HEAD
         <SocialMediaSidebar />
         <div className="min-h-screen bg-black text-white ">{children}</div>
         <SubFooter />
+=======
+        <div className="min-h-screen bg-black text-white">{children}</div>
+>>>>>>> 47a7f88fe3ce0ccb8352e99dbcab56f0726ec613
         <Footer />
+        <SubFooter />
       </body>
     </html>
   );

@@ -6,10 +6,10 @@ import TeamMember from '../components/TeamMember';
 export default function MeetOurTeam() {
   return (
     <div
-      className="w-full h-[200vh] md:h-[140vh]  flex flex-col items-center justify-start md:justify-between  bg-cover bg-center"
+      className="w-full h-[200vh] md:h-[140vh]  flex flex-col items-center justify-start md:justify-center gap-y-32  bg-cover bg-center"
       style={{ backgroundImage: `url('/images/rayOfLight.svg')` }}
     >
-      <span className="capitalize mb-4 md:block text-2xl md:text-5xl font-extrabold text-white">
+      <span className="capitalize mb-4 md:block text-2xl md:text-5xl font-extrabold text-white md:mb-20">
         meet our team
       </span>
 
