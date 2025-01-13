@@ -51,7 +51,7 @@ export default function Parther() {
     if (hasStarted) {
       let start = 0;
       const end = 100; // Valor final del contador
-      const duration = 2000; // Duración de la animación en ms
+      const duration = 3000; // Duración de la animación en ms
       const incrementTime = duration / end;
 
       const timer = setInterval(() => {

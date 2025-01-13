@@ -10,7 +10,7 @@ export default function SocialMediaSidebar() {
             border border-gray-300 text-white py-4 space-y-10 shadow-lg z-50"
     >
       <a
-        href="https://www.tiktok.com/@trillionquest?_t=ZT-8stpLos8kec&_r=1"
+        href="https://wa.me/13524388372"
         target="_blank"
         rel="noopener noreferrer"
         className="text-2xl md:text-4xl hover:scale-125 hover:text-yellow-300 transition-transform duration-200"
@@ -18,7 +18,7 @@ export default function SocialMediaSidebar() {
         <FaPhoneAlt />
       </a>
       <a
-        href="https://instagram.com"
+        href=""
         target="_blank"
         rel="noopener noreferrer"
         className="text-2xl md:text-4xl hover:scale-125 hover:text-yellow-300 transition-transform duration-200"
@@ -26,8 +26,7 @@ export default function SocialMediaSidebar() {
         <FiMail />
       </a>
       <a
-        href="https://wa.me/13524388372
-"
+        href="https://wa.me/13524388372"
         target="_blank"
         rel="noopener noreferrer"
         className="text-2xl md:text-4xl hover:scale-125 hover:text-yellow-300 transition-transform duration-200"

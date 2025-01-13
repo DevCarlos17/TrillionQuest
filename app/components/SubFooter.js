@@ -15,28 +15,37 @@ export default function SubFooter() {
           >
             <FaPhone size={30} className="hidden sm:block md:block" />
           </a>
-          <span className="hover:scale-110 hover:text-yellow-500 text-1xl md:text-3xl cursor-pointer">
+          <a
+            href="https://wa.me/13524388372"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:text-yellow-500 text-1xl md:text-3xl cursor-pointer"
+          >
             +1 (515) 553-7235
-          </span>
+          </a>
         </li>
 
+
         {/* Email */}
-        <li className="flex items-center gap-x-3 md:gap-x-5 font-bold text-white ">
+        <li className="flex items-center gap-x-3 md:gap-x-5 font-bold text-white">
           <a
             href="mailto:info@trillionquest.com"
             className="hover:scale-110 hover:text-yellow-500 transition-transform duration-700 flex items-center gap-x-2"
           >
             <MdOutlineEmail size={30} className="hidden sm:block md:block" />
           </a>
-          <span className="hover:scale-110 hover:text-yellow-500 text-1xl md:text-3xl cursor-pointer">
+          <a
+            href="mailto:info@trillionquest.com"
+            className="hover:scale-110 hover:text-yellow-500 text-1xl md:text-3xl cursor-pointer"
+          >
             info@trillionquest.com
-          </span>
+          </a>
         </li>
       </ul>
 
       {/* Useful Links */}
       <div div className="flex -mt-14 flex-col justify-evenly mr-5 md:mr-0 text-center text-white text-opacity-90 font-bold text-1xl md:text-2xl md:space-y-2 h-[20vh]" >
-        <span className="uppercase ml-4 mb-2">USEFUL LINKS</span>
+        <span className="uppercase ml-4 mb-2">Useful Links</span>
 
         <span className="w-[15vw] whitespace-nowrap">
           <NavLink href="/why-choose-us">Why Choose Us</NavLink>
