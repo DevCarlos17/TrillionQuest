@@ -130,43 +130,6 @@ export default function Parther() {
               ))}
             </div>
           </div>
-
-          {/* Iconos de redes sociales */}
-          <div className="hidden sm:flex space-x-4 md:space-x-6 gl:mt-10 ml-20 md:ml-56">
-            <a
-              href="https://www.tiktok.com/@trillionquest?_t=ZT-8stpLos8kec&_r=1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
-            >
-              <FaTiktok size={40} />
-            </a>
-
-            <a
-              href="https://www.instagram.com/trillionquest_?igsh=MWwwbnprYnpneDV4bg=="
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
-            >
-              <FaInstagram size={40} />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/trillionquest/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
-            >
-              <IoLogoWhatsapp size={40} />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/trillionquest/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-yellow-500 hover:scale-150 text-white transition-transform duration-700"
-            >
-              <FaLinkedin size={40} />
-            </a>
-          </div>
         </AnimatedDiv>
 
         <AnimatedDiv variants={slideInFromRight}>

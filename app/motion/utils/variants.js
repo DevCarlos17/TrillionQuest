@@ -7,7 +7,7 @@ const slideInFromRight = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 0.8, ease: 'easeOut', delay: 0.2 },
+    transition: { duration: 1.3, ease: 'easeOut', delay: 0.2 },
   },
   exit: {
     x: '100%',
@@ -25,7 +25,12 @@ const slideInFromLeft = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 0.5, ease: 'easeIn' },
+    transition: { duration: 1.3, ease: 'easeOut', delay: 0.2 },
+  },
+  exit: {
+    x: '-100%',
+    opacity: 0,
+    transition: { duration: 0.5, ease: 'easeIn', delay: 0.2 },
   },
 };
 
