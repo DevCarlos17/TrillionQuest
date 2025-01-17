@@ -41,7 +41,7 @@ export default function Navbar() {
     /* */
   }
   return (
-    <div className="h-[10vh] w-full px-7 flex items-center  sticky top-0 z-50  transition-all duration-700 font-semibold bg-black text-white">
+    <div className="h-[10vh] w-full px-7 flex items-center sticky top-0 z-50  transition-all duration-700 font-semibold bg-black text-white">
       {/* Left Side*/}
       <div className=" w-[35%] h-full flex items-center justify-center  text-xl md:text-2xl lg:text-3xl">
         {/* Logo */}
@@ -72,12 +72,18 @@ export default function Navbar() {
       </div>
 
       {/* Center */}
-      <div className=" w-[30%] h-full justify-center items-center flex text-xl md:text-2xl lg:text-3xl">
+      <div className="w-[30%] h-full justify-center items-center flex text-xl md:text-2xl lg:text-3xl">
         {/* Pantalla sm */}
-        <NavLink href="/" className="w-[50%] text-center text-3xl font-bold ">
-          Trillion
+        <NavLink href="/" className="w-[10vh] h-auto text-center">
+          <Image
+            src="/images/miniLogo.svg"
+            alt="Logo Trillion"
+            width={100}
+            height={100}
+          />
         </NavLink>
       </div>
+
       {/* Right Side */}
       <div className=" w-[35%] h-full justify-center items-center flex text-xl md:text-2xl lg:text-3xl">
         <div className="hidden sm:flex justify-center space-x-4 lg:space-x-14 text-xl lg:text-2xl font-bold">

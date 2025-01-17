@@ -76,12 +76,19 @@ export default function SocialMedia() {
             connections with your target audience <br />
             across all platforms.
           </p>
-          <Button
-            name={'Learn More'}
-            style={
-              'w-[80%] lg:w-[50%] text-sm  md:text-xl lg:text-2xl mt-7 md:mt-14 px-4 md:px-12 py-1 md:py-2 border tracking-widest'
-            }
-          />
+          <a
+            href="https://calendly.com/agostino-trillionquest/quick-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-white 
+  bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+  text-yellow-400 font-bold rounded-full 
+  transition-transform duration-300 
+  hover:scale-110 text-1xl md:text-3xl hover:bg-gradient-to-r 
+  hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
+  hover:text-gray-900 px-10 cursor-pointer md:px-16 py-4">
+            Learn More
+          </a>
         </AnimatedDiv>
       </div>
     </div>

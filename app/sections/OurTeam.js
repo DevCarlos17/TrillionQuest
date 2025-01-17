@@ -1,15 +1,12 @@
-import Button from '../components/Button';
-import Footer from '../components/Footer';
-import SubFooter from '../components/SubFooter';
 import TeamMember from '../components/TeamMember';
 
 export default function MeetOurTeam() {
   return (
     <div
-      className="w-full h-[200vh] md:h-[140vh]  flex flex-col items-center justify-start md:justify-center gap-y-32  bg-cover bg-center"
-      style={{ backgroundImage: `url('/images/rayOfLight.svg')` }}
+      className="w-full h-[140vh] md:h-[60vh] flex flex-col items-center justify-start md:justify-center  bg-cover bg-center"
+    // style={{ backgroundImage: `url('/images/rayOfLight.svg')` }}
     >
-      <span className="capitalize mb-4 md:block text-2xl md:text-5xl font-extrabold text-white md:mb-20">
+      <span className="capitalize md:block text-3xl md:text-5xl font-extrabold text-white mb-10">
         meet our team
       </span>
 
@@ -50,12 +47,6 @@ export default function MeetOurTeam() {
           into impactful realities.
         </TeamMember>
       </div>
-      <Button
-        name={'Learn More'}
-        style={
-          'hidden md:block md:text-xl lg:text-2xl  md:w-[25vw] lg:w-[23vw] xl:w-[15vw] 2xl:w-[15vw] tracking-widest md:py-3 2xl:py-4'
-        }
-      />
     </div>
   );
 }

@@ -28,12 +28,21 @@ export default function BusinessSoulution() {
             </span>
           </div>
 
-          <Button
-            name={'Learn More'}
-            style={
-              'text-md md:text-xl w-[50%] sm:w-[40%] md:w-[60%] lg:w-[90%] xl:w-[70%] lg:text-2xl px-2 py-3 md:py-4 border tracking-widest'
-            }
-          />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            name="Learn More"
+            href="https://calendly.com/agostino-trillionquest/quick-call"
+            className="border border-white
+    bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+    text-yellow-400 font-bold rounded-full 
+    transition-transform duration-300 
+    hover:scale-110 text-1xl md:text-3xl hover:bg-gradient-to-r 
+    hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
+    hover:text-gray-900 px-10 md:px-16 py-4">
+            Book a Call
+          </a>
+
         </AnimatedDiv>
         {/* Robots Image*/}
         <AnimatedDiv

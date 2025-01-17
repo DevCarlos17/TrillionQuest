@@ -1,26 +1,16 @@
 import InputField from './InputField';
-import { motion } from 'framer-motion';
 
 export default function Form() {
   return (
     <div className="w-[70%] md:w-full h-full p-4 sm:p-6 md:p-8 mx-auto mb-10 bg-slate-700 md:bg-slate-900/50 rounded-2xl text-center">
-      <motion.h1
-        className="text-3xl md:text-3xl lg:text-4xl font-bold text-yellow-400 mb-2"
-        initial={{ x: '100vw', opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.5, ease: 'easeOut' }}
-      >
+      <div
+        className="text-3xl md:text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">
         Grow Your Brand
-      </motion.h1>
+      </div>
 
-      <motion.p
-        className="text-white text-xl md:text-xl mb-6"
-        initial={{ x: '100vw', opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2, ease: 'easeOut' }}
-      >
+      <p className='mb-3 tex-1xl'>
         By partnering with Trillion Quest
-      </motion.p>
+      </p>
 
       <form className="space-y-4 flex flex-col justify-center items-center md:space-y-6 gl:space-y-8 relative z-40">
         <InputField
@@ -53,6 +43,6 @@ export default function Form() {
           Get Your Free Proposal
         </button>
       </form>
-    </div>
+    </div >
   );
 }

@@ -60,13 +60,14 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="z-20 h-[20vh] bg-black space-y-0">
+      <div className="z-20 h-[20vh] space-y-0">
         {/* Digital Marketing */}
         <DigitalMarketing />
 
         {/* Button Contact Us */}
         <div className="flex h-[10vh] ">
           <Button
+            href="/contact"
             name={'Contact Us'}
             style={
               'text-2xl md:px-10 md:text-3xl ml-[88px] tracking-widest hidden md:block h-[7vh] mt-[1.5vh] '

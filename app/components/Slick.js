@@ -56,7 +56,7 @@ const PartnerSlider = () => {
       <Slider {...settings}>
         {partners.map((partner) => (
           <div key={partner.name}>
-            <div className="flex items-center justify-center group cursor-pointer">
+            <div className="flex items-center justify-center group">
               {/* Ícono */}
               <partner.icon
                 className="w-[7vw] h-[7vh] md:w-[8vw] md:h-[8vh] lg:w-[9vw] xl:h-[9vh] text-white transition-transform duration-500 group-hover:scale-125 group-hover:text-yellow-500"

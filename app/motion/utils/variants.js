@@ -36,7 +36,7 @@ const slideInFromLeft = {
 
 const slideInFromTop = {
   hidden: {
-    y: '-100%',
+    y: '-30%',
     opacity: 0,
     transition: { duration: 0.5 },
   },

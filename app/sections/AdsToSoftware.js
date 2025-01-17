@@ -81,14 +81,21 @@ export default function AdsToSoftware() {
 
             {/* Botón con flecha */}
             <div className="flex flex-col md:ml-28 items-center py-10 lg:flex-row lg:justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-              <Button
-                name={'Learn more'}
-                style={
-                  'uppercase right-16 tracking-widest px-6 md:px-12 py-2 md:py-3 flex items-center justify-center space-x-3 text-lg md:text-2xl'
-                }
-              >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                name="Learn More"
+                href="https://calendly.com/agostino-trillionquest/quick-call"
+                className="border flex items-center gap-5 border-white
+    bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+    text-yellow-400 font-bold rounded-full 
+    transition-transform duration-300 
+    hover:scale-110 text-1xl md:text-3xl hover:bg-gradient-to-r 
+    hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-200 
+    hover:text-gray-900 px-10 cursor-pointer md:px-16 py-4">
+                Learn More
                 <FaArrowRight className="h-4 md:h-8 w-6 md:w-6" />
-              </Button>
+              </a>
 
               {/* Iconos de redes sociales */}
               <div className="hidden sm:flex space-x-4 md:space-x-6 gl:mt-10 ml-20 md:ml-56">
