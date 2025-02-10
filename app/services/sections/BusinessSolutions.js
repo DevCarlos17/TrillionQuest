@@ -2,7 +2,7 @@ import ServicesRow from '../components/ServicesRow';
 
 export default function BusinessSolutions() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen  w-[70vw]  space-y-20  mx-10 md:mx-10 ">
+    <div className="flex flex-col mb-5 justify-center items-center min-h-screen w-[70vw]  space-y-20  mx-10 md:mx-10 ">
       {/*Row 1*/}
       <ServicesRow
         title={'SOCIAL MEDIA MANAGEMENT'}

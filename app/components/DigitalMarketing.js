@@ -1,8 +1,36 @@
+import { useState, useEffect } from "react";
 import { FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { motion } from "framer-motion";
 
 const DigitalMarketing = () => {
+
+  const text = "Digital Marketing";
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [index, setIndex] = useState(0);
+  const [hasMoved, setHasMoved] = useState(false);
+
+  useEffect(() => {
+    if (!hasMoved) return; // No empieza a escribir hasta que termine el movimiento
+
+    const typingSpeed = isDeleting ? 50 : 100; // Velocidad de escritura/borrado
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting && index < text.length) {
+        setDisplayedText((prev) => prev + text[index]);
+        setIndex(index + 1);
+      } else if (isDeleting && index > 0) {
+        setDisplayedText((prev) => prev.slice(0, -1));
+        setIndex(index - 1);
+      } else {
+        setIsDeleting(!isDeleting);
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [index, isDeleting, hasMoved]);
+
   return (
     <div
       className="w-full flex justify-start sm:justify-between items-center py-4 px-8 sm:px-10 md:px-15 lg:px-24 bg-gradient-to-r from-black via-gray-950 to-white sm:bg-gradient-to-r 
@@ -10,12 +38,13 @@ const DigitalMarketing = () => {
     >
       {/* Título de Digital Marketing */}
       <motion.span
-        className="text-2xl md:text-4xl font-bold tracking-wider right-52 text-white whitespace-nowrap md:whitespace-normal"
+        className="text-2xl md:text-4xl font-bold tracking-wider text-white"
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 3, ease: "easeOut" }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        onAnimationComplete={() => setHasMoved(true)} // Cuando termina el movimiento, comienza el efecto de escritura
       >
-        Digital Marketing
+        {displayedText}
       </motion.span>
 
       <div className="hidden sm:flex space-x-4 md:space-x-6  gl:mt-10 ml-20 md:ml-56">

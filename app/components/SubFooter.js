@@ -42,15 +42,6 @@ export default function SubFooter() {
         </li>
       </ul>
 
-      {/* Background Image */}
-      <div
-        className="w-1/3 h-[100vh] flex items-center justify-center bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/images/rayOfLight.svg')`,
-          marginTop: '-670px',
-        }}
-      ></div>
-
       {/* Useful Links */}
       <div className="flex flex-col items-start space-y-4 text-white text-opacity-90 font-bold text-sm md:text-lg">
         <span className="uppercase">Useful Links</span>
